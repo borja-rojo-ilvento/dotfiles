@@ -1,11 +1,13 @@
 
 [global]
+disable_stdin = true
 # Disable all logging
 warn_timeout = "0s"
 
 # Silence all direnv output completely
 hide_env_diff = true
 
-# [global.env]
-# Set empty log format
-# DIRENV_LOG_FORMAT = ""
+[global.env]
+DIRENV_LOG_FORMAT = ""
+
+
