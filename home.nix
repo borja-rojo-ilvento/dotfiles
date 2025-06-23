@@ -14,7 +14,7 @@
 
   home.activation.stowDotfiles = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
     pushd $HOME/dotfiles
-    ${pkgs.stow}/bin/stow .
+    ${pkgs.stow}/bin/stow -d stow -t ~ */
     popd
   '';
 }
