@@ -10,11 +10,16 @@
       nixpkgs,
       ...
     }:
+    let
+      supportedSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
+      forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
+    in
     {
-      nixosModules.default = import ./home.nix {
-        pkgs = nixpkgs;
-        lib = nixpkgs.lib;
-        dotfiles = self;
-      };
+      nixosModules = forAllSystems (system: {
+        default = { pkgs, lib, ... }: import ./home.nix {
+          inherit pkgs lib;
+          dotfiles = self;
+        };
+      });
     };
 }
