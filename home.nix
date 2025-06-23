@@ -1,11 +1,16 @@
-{ pkgs, lib, ... }:
+{
+  pkgs,
+  lib,
+  dotfiles,
+  ...
+}:
 let
-  dotfiles = pkgs.fetchFromGitHub {
-    owner = "yourusername";
-    repo = "dotfiles";
-    rev = "main";
-    sha256 = "...";
-  };
+  # dotfiles = pkgs.fetchFromGitHub {
+  #   owner = "yourusername";
+  #   repo = "dotfiles";
+  #   rev = "main";
+  #   sha256 = "...";
+  # };
 in
 {
   home.packages = with pkgs; [ stow ];
