@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Check and remove .claude/CLAUDE.md symlink if it points to dotfiles",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check and remove .config/direnv/direnv symlink if it points to dotfiles",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Check and remove .config/direnv/direnv.toml symlink if it points to dotfiles",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Check and remove .config/nvim symlink if it points to dotfiles",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Verify no other stow-created symlinks remain",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

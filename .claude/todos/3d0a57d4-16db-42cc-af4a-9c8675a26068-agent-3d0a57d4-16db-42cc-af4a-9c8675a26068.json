@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Check .gitmodules file for .config/nvim entry",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check .git/config for .config/nvim submodule section",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Check git index for .config/nvim entry",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Check working directory for .config/nvim files",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Check .git/modules/ for .config/nvim cached directory",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Check for any other submodule artifacts",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Remove cached directory at .git/modules/.config/nvim",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Remove unused lib parameter from jaro system",
+    "status": "completed",
+    "priority": "medium",
+    "id": "1"
+  },
+  {
+    "content": "Revert flake.nix change",
+    "status": "completed",
+    "priority": "medium",
+    "id": "2"
+  },
+  {
+    "content": "Run nix flake check to verify",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Fix dotfiles flake.nix to properly pass pkgs and be platform agnostic",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Make brojo user flake platform agnostic",
+    "status": "completed",
+    "priority": "medium",
+    "id": "2"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Update flake.nix to use @inputs pattern",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Test the @inputs pattern works correctly",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  }
+]

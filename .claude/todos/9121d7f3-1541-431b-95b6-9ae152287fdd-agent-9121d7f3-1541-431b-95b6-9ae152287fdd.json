@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Create new directory structure (lib/hosts, ensure lib/users exists)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Extract hardware-only config from brojo-thinkpad-p14s-gen2/default.nix",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create host type configuration in lib/hosts/default.nix",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Move user config to lib/users/ if not already there",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update systems/jaro/default.nix to use new structure with hostname parameter",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Test the new configuration works",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Write README.md explaining project structure and motivation",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  }
+]

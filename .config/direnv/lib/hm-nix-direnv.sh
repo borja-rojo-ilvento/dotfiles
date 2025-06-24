@@ -1,1 +1,1 @@
-/nix/store/n3s1zwbw7ncbaqp3hzw647i93qsayy6q-home-manager-files/.config/direnv/lib/hm-nix-direnv.sh
+/nix/store/plad4zjgjhg3qlijhnd7m78r3f6x32za-home-manager-files/.config/direnv/lib/hm-nix-direnv.sh

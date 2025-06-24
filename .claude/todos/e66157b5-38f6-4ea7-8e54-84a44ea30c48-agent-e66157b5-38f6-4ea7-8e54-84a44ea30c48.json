@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Check for graphics driver issues during suspend transition",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Examine kernel parameters and boot configuration for suspend issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Configure NVIDIA power management for proper suspend",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Add suspend-related kernel parameters",
+    "status": "pending",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Test the fix by adding NVIDIA power management configs",
+    "status": "pending",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Look for known ThinkPad P14s Gen2 suspend issues and workarounds",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Search git history for hosts/nixos/ directory structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Identify graphics/hardware configuration from old structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Extract relevant graphics settings for comparison",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]
