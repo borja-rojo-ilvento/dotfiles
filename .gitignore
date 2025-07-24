@@ -2,3 +2,5 @@
 .claude/todos/
 .claude/statsig/
 .claude/.credentials.json
+.claude/shell-snapshots/
+

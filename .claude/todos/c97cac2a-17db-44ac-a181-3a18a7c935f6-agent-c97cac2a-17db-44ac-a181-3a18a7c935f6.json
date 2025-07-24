@@ -1,8 +1,0 @@
-[
-  {
-    "content": "Rename submodule from '.config/nvim' to desired name",
-    "status": "pending",
-    "priority": "medium",
-    "id": "1"
-  }
-]

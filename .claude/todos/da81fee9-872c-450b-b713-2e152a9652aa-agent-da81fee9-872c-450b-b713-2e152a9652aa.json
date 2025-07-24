@@ -1,8 +1,0 @@
-[
-  {
-    "content": "Fix dotfiles flake.nix to properly pass pkgs and be platform agnostic",
-    "status": "completed",
-    "priority": "high",
-    "id": "1"
-  }
-]
