@@ -1,0 +1,575 @@
+[DEBUG] Watching for changes in setting files /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 2 allow rule(s) to destination 'localSettings': ["Bash(find:*)","Bash(ls:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/run/current-system/sw/bin/zsh)
+[DEBUG] Looking for shell config file: /home/brojo/.zshrc
+[DEBUG] Snapshots directory: /home/brojo/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760563088652-sge9gl.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/21ac7977-67f3-4425-bd07-879c11a6a937-agent-21ac7977-67f3-4425-bd07-879c11a6a937.json.tmp.41055.1760563088656
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/brojo/.claude/todos/21ac7977-67f3-4425-bd07-879c11a6a937-agent-21ac7977-67f3-4425-bd07-879c11a6a937.json.tmp.41055.1760563088656 to /home/brojo/.claude/todos/21ac7977-67f3-4425-bd07-879c11a6a937-agent-21ac7977-67f3-4425-bd07-879c11a6a937.json
+[DEBUG] File /home/brojo/.claude/todos/21ac7977-67f3-4425-bd07-879c11a6a937-agent-21ac7977-67f3-4425-bd07-879c11a6a937.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/brojo/.claude/skills, project=/home/brojo/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563088670
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111548 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563088670 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (50825 bytes)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563088834
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111548 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563088834 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563088875
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111548 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563088875 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563088885
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111548 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563088885 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] rg error (signal=undefined, code=ERR_CHILD_PROCESS_STDIO_MAXBUFFER, stderr: ), 198083 results
+[ERROR] RangeError: RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at Socket.onChildStdout (node:child_process:484:14)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[DEBUG] MCP server "zettle": SSE transport initialized, awaiting connection
+[DEBUG] MCP server "zettle": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": SSE Connection failed after 22ms: {"url":"https://localhost:3000","error":"SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000","errorType":"MX2","stack":"Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000\n    at _eventSource.onerror (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:25287)\n    at X01.WV0 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:5563)\n    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:2985\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+[ERROR] MCP server "zettle" Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] MCP server "zettle": Connection failed after 34ms: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[ERROR] MCP server "zettle" Connection failed: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563099965
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111548 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563099965 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563100031
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111443 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563100031 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563100040
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111443 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563100040 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563100046
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111485 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563100046 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Trust not accepted for current directory - skipping plugin installations
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563100330
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111590 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563100330 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 041307b8-3f07-4eb3-8572-dd2514c5724c, tracking 0 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563100391
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111673 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563100391 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563100523
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111673 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563100523 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563103218
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111673 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563103218 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563103252
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111673 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563103252 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message d2f001e0-a6e1-43cb-82a6-a6fc59a4d127
+[DEBUG] FileHistory: Added snapshot for d2f001e0-a6e1-43cb-82a6-a6fc59a4d127, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Executing hooks for PreToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Executing hooks for PreToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[ERROR] AxiosError: AxiosError: Request failed with status code 403
+    at iM (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at BrotliDecompress.<anonymous> (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at BrotliDecompress.emit (node:events:531:35)
+    at BrotliDecompress.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at A81.request (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async m4Q (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2579:1062)
+    at async d4Q (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2579:2055)
+    at async Object.call (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2579:8350)
+    at async WS5 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async s7B (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:1690:2859)
+    at async L2Q (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:3408:2126)
+    at async YS5 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:61464)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Executing hooks for PostToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /home/brojo/.claude/settings.local.json.tmp.41055.1760563157199
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 147 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/settings.local.json.tmp.41055.1760563157199 to /home/brojo/.claude/settings.local.json
+[DEBUG] File /home/brojo/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563174170
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111673 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563174170 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563174193
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111673 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563174193 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563174200
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111897 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563174200 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 620392b4-f108-4bff-933d-bbd33d3f3d2f
+[DEBUG] FileHistory: Added snapshot for 620392b4-f108-4bff-933d-bbd33d3f3d2f, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563290968
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111897 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563290968 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563290997
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111897 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563290997 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563291003
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112024 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563291003 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 958112ce-93d5-42b9-9c51-265d98351cb7
+[DEBUG] FileHistory: Added snapshot for 958112ce-93d5-42b9-9c51-265d98351cb7, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Executing hooks for PreToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /home/brojo/.claude/settings.local.json.tmp.41055.1760563472149
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 188 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/settings.local.json.tmp.41055.1760563472149 to /home/brojo/.claude/settings.local.json
+[DEBUG] File /home/brojo/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebFetch(domain:wiki.nixos.org)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Executing hooks for PostToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563484897
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112024 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563484897 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563484918
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112024 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563484918 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563484925
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112407 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563484925 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563734812
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112407 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563734812 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Cleaned up session snapshot: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760563088652-sge9gl.sh
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.41055.1760563736981
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112860 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.41055.1760563736981 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically

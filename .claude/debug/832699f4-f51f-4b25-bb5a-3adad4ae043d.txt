@@ -1,0 +1,19 @@
+[DEBUG] Watching for changes in setting files /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.local.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] MCP server "zettle": SSE transport initialized, awaiting connection
+[DEBUG] MCP server "zettle": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] MCP server "zettle": SSE Connection failed after 31ms: {"url":"https://localhost:3000","error":"SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000","errorType":"MX2","stack":"Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000\n    at _eventSource.onerror (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:25287)\n    at X01.WV0 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:5563)\n    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:2985\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+[ERROR] MCP server "zettle" Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] MCP server "zettle": Connection failed after 42ms: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[ERROR] MCP server "zettle" Connection failed: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.40941.1760563057627
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111939 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.40941.1760563057627 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically

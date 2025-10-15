@@ -1,0 +1,666 @@
+[DEBUG] Watching for changes in setting files /home/brojo/system-conf/.claude/settings.local.json...
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561521778
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 103904 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561521778 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Applying permission update: Adding 27 allow rule(s) to destination 'localSettings': ["Bash(nix flake check)","Bash(mkdir:*)","Bash(mv:*)","Bash(systemctl status:*)","Bash(cat:*)","Bash(journalctl:*)","Bash(lsmod)","Bash(powertop:*)","Bash(dmesg:*)","Bash(systemctl list-units:*)","Bash(lspci:*)","Bash(nix-shell:*)","WebFetch(domain:github.com)","WebFetch(domain:raw.githubusercontent.com)","Bash(curl:*)","Bash(find:*)","Bash(nix flake show:*)","Bash(nvidia-smi:*)","Bash(lsblk:*)","Bash(swapon:*)","Bash(nvidia-settings:*)","Bash(ls:*)","Bash(echo $DISPLAY)","Bash(xrandr:*)","Bash(nix flake check:*)","Bash(nix flake update:*)","Bash(nix eval:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/run/current-system/sw/bin/zsh)
+[DEBUG] Looking for shell config file: /home/brojo/.zshrc
+[DEBUG] Snapshots directory: /home/brojo/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760561521858-lt9ytb.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/faf2f79c-77ab-4d79-a993-035e6d4e456c-agent-faf2f79c-77ab-4d79-a993-035e6d4e456c.json.tmp.9469.1760561521863
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/brojo/.claude/todos/faf2f79c-77ab-4d79-a993-035e6d4e456c-agent-faf2f79c-77ab-4d79-a993-035e6d4e456c.json.tmp.9469.1760561521863 to /home/brojo/.claude/todos/faf2f79c-77ab-4d79-a993-035e6d4e456c-agent-faf2f79c-77ab-4d79-a993-035e6d4e456c.json
+[DEBUG] File /home/brojo/.claude/todos/faf2f79c-77ab-4d79-a993-035e6d4e456c-agent-faf2f79c-77ab-4d79-a993-035e6d4e456c.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/brojo/.claude/skills, project=/home/brojo/system-conf/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Summarizing all 1 messages (~0 tokens)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561521911
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 103508 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561521911 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (50825 bytes)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561521984
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111124 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561521984 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at pN (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:713:1075)
+    at IncomingMessage.<anonymous> (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:714:9910)
+    at IncomingMessage.emit (node:events:531:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at pQ1.request (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:716:2078)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async cIA (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:877:25947)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522049
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111206 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522049 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522055
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111236 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522055 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522151
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111236 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522151 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522202
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111236 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522202 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522208
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111236 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522208 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=undefined
+[DEBUG] Skipping plugin installations - ENABLE_PLUGINS not set
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522453
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111341 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522453 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522503
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111341 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522503 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522621
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111379 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522621 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561522775
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111460 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561522775 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561524147
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111452 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561524147 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[ERROR] Error: Error: Error opening file /home/brojo/.claude/projects/-home-brojo-system-conf/e6061fb2-8d3a-4afd-be99-5356dd98bce6.jsonl: Error: ENOENT: no such file or directory, open '/home/brojo/.claude/projects/-home-brojo-system-conf/e6061fb2-8d3a-4afd-be99-5356dd98bce6.jsonl'
+    at r91 (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:746:176)
+    at async ck0 (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:3379:2089)
+    at async n6Q (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:3486:278)
+[ERROR] Error: Error: Error opening file /home/brojo/.claude/projects/-home-brojo-system-conf/76e150fa-ec19-40ce-838b-0edfe316d284.jsonl: Error: ENOENT: no such file or directory, open '/home/brojo/.claude/projects/-home-brojo-system-conf/76e150fa-ec19-40ce-838b-0edfe316d284.jsonl'
+    at r91 (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:746:176)
+    at async ck0 (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:3379:2089)
+    at async n6Q (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:3486:278)
+[ERROR] Error: Error: Error opening file /home/brojo/.claude/projects/-home-brojo-system-conf/a1bee66d-e2e0-4439-8065-f0cfe7d3e12f.jsonl: Error: ENOENT: no such file or directory, open '/home/brojo/.claude/projects/-home-brojo-system-conf/a1bee66d-e2e0-4439-8065-f0cfe7d3e12f.jsonl'
+    at r91 (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:746:176)
+    at async ck0 (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:3379:2089)
+    at async n6Q (file:///nix/store/9vq4agfc1d9rs91q5qag97nhvf4rhlzs-claude-code-2.0.11/lib/node_modules/@anthropic-ai/claude-code/cli.js:3486:278)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561567462
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111492 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561567462 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561717742
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111528 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561717742 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561729029
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111552 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561729029 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561821514
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111584 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561821514 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude/settings.json.tmp.9469.1760561824849
+[DEBUG] Temp file written successfully, size: 36 bytes
+[DEBUG] Renaming /home/brojo/.claude/settings.json.tmp.9469.1760561824849 to /home/brojo/.claude/settings.json
+[DEBUG] File /home/brojo/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude/settings.json.tmp.9469.1760561825820
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 37 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/settings.json.tmp.9469.1760561825820 to /home/brojo/.claude/settings.json
+[DEBUG] File /home/brojo/.claude/settings.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude/settings.json.tmp.9469.1760561834107
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 77 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/settings.json.tmp.9469.1760561834107 to /home/brojo/.claude/settings.json
+[DEBUG] File /home/brojo/.claude/settings.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] FileHistory: Added snapshot for 51160e07-9d12-4d49-b593-c57cd37b8b2e, tracking 0 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561834323
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111559 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561834323 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561834340
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111590 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561834340 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561873018
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111590 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561873018 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] FileHistory: Making snapshot for message b185ba70-b770-4820-8d4a-21cee24fab13
+[DEBUG] FileHistory: Added snapshot for b185ba70-b770-4820-8d4a-21cee24fab13, tracking 0 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561884668
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111569 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561884668 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561884682
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111569 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561884682 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] FileHistory: Making snapshot for message a2d1619f-45f6-44e8-a998-0fc6918aa81a
+[DEBUG] FileHistory: Added snapshot for a2d1619f-45f6-44e8-a998-0fc6918aa81a, tracking 0 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561995894
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111531 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561995894 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760561995905
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111531 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760561995905 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562000228
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111426 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562000228 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562000241
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111426 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562000241 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562000248
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111531 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562000248 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562001183
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111426 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562001183 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562001189
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111426 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562001189 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562001350
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111531 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562001350 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message c4b43d7c-04ad-4df6-84ae-488cc997963a
+[DEBUG] FileHistory: Added snapshot for c4b43d7c-04ad-4df6-84ae-488cc997963a, tracking 0 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562008762
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111484 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562008762 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] FileHistory: Tracked file modification for /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562031393
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1636 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562031393 to /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] File /home/brojo/system-conf/lib/hosts/default.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: nix flake check
+[DEBUG] Bash tool description: Verify flake configuration
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562299609
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111484 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562299609 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562305595
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111551 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562305595 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 533733b1-1d08-49df-bc7d-52c4eea7ba5e
+[DEBUG] FileHistory: Added snapshot for 533733b1-1d08-49df-bc7d-52c4eea7ba5e, tracking 1 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562313566
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111524 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562313566 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562318714
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1628 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562318714 to /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] File /home/brojo/system-conf/lib/hosts/default.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: nix flake check
+[DEBUG] Bash tool description: Verify flake configuration
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562330968
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1620 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562330968 to /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] File /home/brojo/system-conf/lib/hosts/default.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: nix flake check
+[DEBUG] Bash tool description: Verify flake configuration
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562345510
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1620 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562345510 to /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] File /home/brojo/system-conf/lib/hosts/default.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: nix flake check
+[DEBUG] Bash tool description: Verify flake configuration
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562371580
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1599 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/hosts/default.nix.tmp.9469.1760562371580 to /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] File /home/brojo/system-conf/lib/hosts/default.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: nix flake check
+[DEBUG] Bash tool description: Verify flake configuration
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562386014
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111524 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562386014 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562386039
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111524 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562386039 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562393154
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111524 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562393154 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760561521858-lt9ytb.sh
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.9469.1760562398706
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 111939 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.9469.1760562398706 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically

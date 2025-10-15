@@ -1,0 +1,15 @@
+{"display":"/model claude-haiku-4-5-20251001","pastedContents":{},"timestamp":1760561834307,"project":"/home/brojo/system-conf"}
+{"display":"/model claude-haiku-4-5-20251001","pastedContents":{},"timestamp":1760561834326,"project":"/home/brojo/system-conf"}
+{"display":"/model claude-haiku-4-5-20251001","pastedContents":{},"timestamp":1760561834328,"project":"/home/brojo/system-conf"}
+{"display":"!sudo nixos-rebuild switch --flake .","pastedContents":{},"timestamp":1760561884665,"project":"/home/brojo/system-conf"}
+{"display":"!sudo nixos-rebuild switch --flake .","pastedContents":{},"timestamp":1760561884671,"project":"/home/brojo/system-conf"}
+{"display":"!sudo nixos-rebuild switch --flake .","pastedContents":{},"timestamp":1760561884672,"project":"/home/brojo/system-conf"}
+{"display":"!nix flake check","pastedContents":{},"timestamp":1760561995891,"project":"/home/brojo/system-conf"}
+{"display":"!nix flake check","pastedContents":{},"timestamp":1760561995897,"project":"/home/brojo/system-conf"}
+{"display":"!nix flake check","pastedContents":{},"timestamp":1760561995899,"project":"/home/brojo/system-conf"}
+{"display":"Diagnose and fix.","pastedContents":{},"timestamp":1760562008759,"project":"/home/brojo/system-conf"}
+{"display":"'plasma5' is part of desktopManager.","pastedContents":{},"timestamp":1760562313562,"project":"/home/brojo/system-conf"}
+{"display":"prompt","pastedContents":{},"timestamp":1760563100387,"project":"/home/brojo"}
+{"display":"give me a tutorial on how to used the 'xfreerdp' linux tool. How do I use it? What information might I need to connect to a remote machine with it?","pastedContents":{},"timestamp":1760563174197,"project":"/home/brojo"}
+{"display":"Could I used RDP to connect to a headless machine?","pastedContents":{},"timestamp":1760563291001,"project":"/home/brojo"}
+{"display":"A truly headless machine wouldn't work. But, in the case of an NixOS machine which is configured for remote desktop and RDP, I expect it would work. I say this under the impression that setup requires a 'displayManager' enabled. Fetch the wiki at 'https://wiki.nixos.org/wiki/Remote_Desktop' for reference.","pastedContents":{},"timestamp":1760563484922,"project":"/home/brojo"}
