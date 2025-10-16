@@ -1,0 +1,115 @@
+[DEBUG] Watching for changes in setting files /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 4 allow rule(s) to destination 'localSettings': ["Bash(find:*)","Bash(ls:*)","WebSearch","WebFetch(domain:wiki.nixos.org)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/run/current-system/sw/bin/zsh)
+[DEBUG] Looking for shell config file: /home/brojo/.zshrc
+[DEBUG] Snapshots directory: /home/brojo/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760573391116-025eel.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/f6ccec2f-1918-4b97-833c-f013fb8c5949-agent-f6ccec2f-1918-4b97-833c-f013fb8c5949.json.tmp.56663.1760573391125
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/brojo/.claude/todos/f6ccec2f-1918-4b97-833c-f013fb8c5949-agent-f6ccec2f-1918-4b97-833c-f013fb8c5949.json.tmp.56663.1760573391125 to /home/brojo/.claude/todos/f6ccec2f-1918-4b97-833c-f013fb8c5949-agent-f6ccec2f-1918-4b97-833c-f013fb8c5949.json
+[DEBUG] File /home/brojo/.claude/todos/f6ccec2f-1918-4b97-833c-f013fb8c5949-agent-f6ccec2f-1918-4b97-833c-f013fb8c5949.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573391157
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116274 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573391157 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/brojo/.claude/skills, project=/home/brojo/.claude/skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (50825 bytes)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573391474
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116274 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573391474 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573391489
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116274 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573391489 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] rg error (signal=undefined, code=ERR_CHILD_PROCESS_STDIO_MAXBUFFER, stderr: ), 188553 results
+[ERROR] RangeError: RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at Socket.onChildStdout (node:child_process:484:14)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573391564
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116274 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573391564 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": SSE transport initialized, awaiting connection
+[DEBUG] MCP server "zettle": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573392857
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116274 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573392857 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573392948
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116169 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573392948 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573392959
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116169 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573392959 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573392968
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116169 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573392968 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Trust not accepted for current directory - skipping plugin installations
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573393402
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116274 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573393402 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] MCP server "zettle": SSE Connection failed after 641ms: {"url":"https://localhost:3000","error":"SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000","errorType":"MX2","stack":"Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000\n    at _eventSource.onerror (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:25287)\n    at X01.WV0 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:5563)\n    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:2985\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+[ERROR] MCP server "zettle" Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] MCP server "zettle": Connection failed after 656ms: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[ERROR] MCP server "zettle" Connection failed: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Writing to temp file: /home/brojo/.claude/settings.json.tmp.56663.1760573395834
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 76 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/settings.json.tmp.56663.1760573395834 to /home/brojo/.claude/settings.json
+[DEBUG] File /home/brojo/.claude/settings.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Cleaned up session snapshot: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760573391116-025eel.sh
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.56663.1760573398797
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116654 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.56663.1760573398797 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically

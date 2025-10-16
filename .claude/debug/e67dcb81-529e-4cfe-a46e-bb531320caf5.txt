@@ -1,0 +1,1696 @@
+[DEBUG] Watching for changes in setting files /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.json, /home/brojo/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 4 allow rule(s) to destination 'localSettings': ["Bash(find:*)","Bash(ls:*)","WebSearch","WebFetch(domain:wiki.nixos.org)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/run/current-system/sw/bin/zsh)
+[DEBUG] Looking for shell config file: /home/brojo/.zshrc
+[DEBUG] Snapshots directory: /home/brojo/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760564375088-0h0xi5.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/e67dcb81-529e-4cfe-a46e-bb531320caf5-agent-e67dcb81-529e-4cfe-a46e-bb531320caf5.json.tmp.42669.1760564375093
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/brojo/.claude/todos/e67dcb81-529e-4cfe-a46e-bb531320caf5-agent-e67dcb81-529e-4cfe-a46e-bb531320caf5.json.tmp.42669.1760564375093 to /home/brojo/.claude/todos/e67dcb81-529e-4cfe-a46e-bb531320caf5-agent-e67dcb81-529e-4cfe-a46e-bb531320caf5.json
+[DEBUG] File /home/brojo/.claude/todos/e67dcb81-529e-4cfe-a46e-bb531320caf5-agent-e67dcb81-529e-4cfe-a46e-bb531320caf5.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564375102
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112446 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564375102 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/brojo/.claude/skills, project=/home/brojo/.claude/skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Summarizing last 18 of 20 messages (~141577 tokens)
+[DEBUG] Shell snapshot created successfully (50825 bytes)
+[DEBUG] rg error (signal=undefined, code=ERR_CHILD_PROCESS_STDIO_MAXBUFFER, stderr: ), 200243 results
+[ERROR] RangeError: RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at Socket.onChildStdout (node:child_process:484:14)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564375317
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112446 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564375317 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564375343
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112446 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564375343 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": SSE transport initialized, awaiting connection
+[DEBUG] MCP server "zettle": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564376834
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112446 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564376834 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564376874
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112341 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564376874 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564376880
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112341 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564376880 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564376886
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112338 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564376886 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Trust not accepted for current directory - skipping plugin installations
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564377128
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112443 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564377128 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] MCP server "zettle": SSE Connection failed after 351ms: {"url":"https://localhost:3000","error":"SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000","errorType":"MX2","stack":"Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000\n    at _eventSource.onerror (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:25287)\n    at X01.WV0 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:5563)\n    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:558:2985\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+[ERROR] MCP server "zettle" Error: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] MCP server "zettle": Connection failed after 362ms: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[ERROR] MCP server "zettle" Connection failed: SSE error: TypeError: fetch failed: connect ECONNREFUSED ::1:3000, connect ECONNREFUSED 127.0.0.1:3000
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 431cb97f-320d-4f75-933a-e93160a8d757, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564400657
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112443 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564400657 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564400682
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112443 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564400682 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564400690
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112590 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564400690 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 39478891-f621-468e-a50f-14e5764555f7
+[DEBUG] FileHistory: Added snapshot for 39478891-f621-468e-a50f-14e5764555f7, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564875802
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112590 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564875802 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564875826
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112590 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564875826 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760564875832
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112935 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760564875832 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 9d4a8bfc-468b-4b22-938d-fa694445c3a5
+[DEBUG] FileHistory: Added snapshot for 9d4a8bfc-468b-4b22-938d-fa694445c3a5, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760565674303
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112935 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760565674303 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760565674328
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 112935 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760565674328 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760565674336
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 113961 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760565674336 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message b5270283-4543-4c09-a49f-c096805a9f45
+[DEBUG] FileHistory: Added snapshot for b5270283-4543-4c09-a49f-c096805a9f45, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566132136
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 113961 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566132136 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566132165
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 113961 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566132165 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566132173
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 114419 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566132173 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message bf26476b-c281-446d-8595-68af4e2af821
+[DEBUG] FileHistory: Added snapshot for bf26476b-c281-446d-8595-68af4e2af821, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566436228
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 114419 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566436228 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566436254
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 114419 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566436254 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566436261
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 114936 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566436261 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 72cf3c66-c8ed-47a3-b8e1-201dd08d1c20
+[DEBUG] FileHistory: Added snapshot for 72cf3c66-c8ed-47a3-b8e1-201dd08d1c20, tracking 0 files
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566701729
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 114936 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566701729 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566701746
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 114936 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566701746 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566701754
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115292 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566701754 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 5d4e969a-f587-488d-bf87-bfd7397a97dd
+[DEBUG] FileHistory: Added snapshot for 5d4e969a-f587-488d-bf87-bfd7397a97dd, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566973385
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115292 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566973385 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566973409
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115292 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566973409 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760566973416
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115725 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760566973416 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message f05545e5-7bb8-43c2-b8c4-148340f6379f
+[DEBUG] FileHistory: Added snapshot for f05545e5-7bb8-43c2-b8c4-148340f6379f, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760567527605
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115725 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760567527605 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760567527627
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115725 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760567527627 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760567527634
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116102 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760567527634 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 5d619428-cb38-40c3-a3da-a261e6401282
+[DEBUG] FileHistory: Added snapshot for 5d619428-cb38-40c3-a3da-a261e6401282, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760567707972
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116102 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760567707972 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760567707994
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116102 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760567707994 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760567708001
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116274 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760567708001 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] MCP server "zettle": No token data found
+[DEBUG] Cleaned up session snapshot: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760564375088-0h0xi5.sh
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.42669.1760567734726
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116693 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.42669.1760567734726 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
