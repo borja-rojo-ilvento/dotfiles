@@ -1,0 +1,752 @@
+[DEBUG] Watching for changes in setting files /home/brojo/.claude/settings.json, /home/brojo/system-conf/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 27 allow rule(s) to destination 'localSettings': ["Bash(nix flake check)","Bash(mkdir:*)","Bash(mv:*)","Bash(systemctl status:*)","Bash(cat:*)","Bash(journalctl:*)","Bash(lsmod)","Bash(powertop:*)","Bash(dmesg:*)","Bash(systemctl list-units:*)","Bash(lspci:*)","Bash(nix-shell:*)","WebFetch(domain:github.com)","WebFetch(domain:raw.githubusercontent.com)","Bash(curl:*)","Bash(find:*)","Bash(nix flake show:*)","Bash(nvidia-smi:*)","Bash(lsblk:*)","Bash(swapon:*)","Bash(nvidia-settings:*)","Bash(ls:*)","Bash(echo $DISPLAY)","Bash(xrandr:*)","Bash(nix flake check:*)","Bash(nix flake update:*)","Bash(nix eval:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/run/current-system/sw/bin/zsh)
+[DEBUG] Looking for shell config file: /home/brojo/.zshrc
+[DEBUG] Snapshots directory: /home/brojo/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760579688660-fxeirz.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579688669
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579688669 to /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json
+[DEBUG] File /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579688693
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116239 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579688693 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/brojo/.claude/skills, project=/home/brojo/system-conf/.claude/skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (50825 bytes)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579688938
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116239 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579688938 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579688948
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116239 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579688948 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579688981
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116239 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579688981 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579689162
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116239 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579689162 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579689230
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116134 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579689230 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579689238
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116134 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579689238 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579689668
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116239 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579689668 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 70040759-90a1-4e0e-99cd-034c323c70ea, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579786458
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 938 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579786458 to /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json
+[DEBUG] File /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at p7B (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:3433:968)
+    at Object.call (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:1690:896)
+    at call.next (<anonymous>)
+    at WS5 (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async q2Q (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async s7B (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:1690:2859)
+    at async L2Q (file:///nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/cli.js:3408:2126)
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579804177
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 911 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579804177 to /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json
+[DEBUG] File /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] FileHistory: Tracked file modification for /home/brojo/system-conf/lib/users/brojo/home.nix
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/users/brojo/home.nix.tmp.12551.1760579819583
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 855 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/users/brojo/home.nix.tmp.12551.1760579819583 to /home/brojo/system-conf/lib/users/brojo/home.nix
+[DEBUG] File /home/brojo/system-conf/lib/users/brojo/home.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579831320
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116517 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579831320 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message f02bb849-5f06-4c38-8eec-9ef272536605
+[DEBUG] FileHistory: Added snapshot for f02bb849-5f06-4c38-8eec-9ef272536605, tracking 1 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579873447
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 894 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760579873447 to /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json
+[DEBUG] File /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] FileHistory: Tracked file modification for /home/brojo/system-conf/lib/system/base.nix
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/system/base.nix.tmp.12551.1760579883818
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2403 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/system/base.nix.tmp.12551.1760579883818 to /home/brojo/system-conf/lib/system/base.nix
+[DEBUG] File /home/brojo/system-conf/lib/system/base.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579903742
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116504 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579903742 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 405f4a74-ebde-414a-97a2-1d8198cecaf8
+[DEBUG] FileHistory: Added snapshot for 405f4a74-ebde-414a-97a2-1d8198cecaf8, tracking 2 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760579960669
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116646 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760579960669 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 4ef096f4-286b-4599-bcc4-a84b44b913c9
+[DEBUG] FileHistory: Added snapshot for 4ef096f4-286b-4599-bcc4-a84b44b913c9, tracking 2 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/system/base.nix.tmp.12551.1760580012537
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2348 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/system/base.nix.tmp.12551.1760580012537 to /home/brojo/system-conf/lib/system/base.nix
+[DEBUG] File /home/brojo/system-conf/lib/system/base.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/system/base.nix.tmp.12551.1760580016901
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2172 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/system/base.nix.tmp.12551.1760580016901 to /home/brojo/system-conf/lib/system/base.nix
+[DEBUG] File /home/brojo/system-conf/lib/system/base.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] FileHistory: Tracked file modification for /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] Writing to temp file: /home/brojo/system-conf/lib/hosts/default.nix.tmp.12551.1760580024108
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1603 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/system-conf/lib/hosts/default.nix.tmp.12551.1760580024108 to /home/brojo/system-conf/lib/hosts/default.nix
+[DEBUG] File /home/brojo/system-conf/lib/hosts/default.nix written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760580027258
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 610 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760580027258 to /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json
+[DEBUG] File /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Bash tool invoked with command: nixos-rebuild build --flake .#jaro 2>&1
+[DEBUG] Bash tool description: Test the configuration build for jaro
+[DEBUG] Bash tool timeout: 300000ms
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760580078815
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json.tmp.12551.1760580078815 to /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json
+[DEBUG] File /home/brojo/.claude/todos/909b879f-4ea1-495f-8e4a-4c39fcba98de-agent-909b879f-4ea1-495f-8e4a-4c39fcba98de.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580084270
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116574 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580084270 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] FileHistory: Making snapshot for message d453fb45-fac9-4800-917a-959e3c726e34
+[DEBUG] FileHistory: Added snapshot for d453fb45-fac9-4800-917a-959e3c726e34, tracking 3 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580242731
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116503 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580242731 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 1847b5fe-1b82-4e3d-ab20-c0a6497eabd7
+[DEBUG] FileHistory: Added snapshot for 1847b5fe-1b82-4e3d-ab20-c0a6497eabd7, tracking 3 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580251366
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116418 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580251366 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] FileHistory: Making snapshot for message 45ff2772-81d0-4af4-8552-a5653f83ffa2
+[DEBUG] FileHistory: Added snapshot for 45ff2772-81d0-4af4-8552-a5653f83ffa2, tracking 3 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580290141
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116441 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580290141 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] FileHistory: Making snapshot for message 52ecfea4-019b-439a-8b8f-172b27552f59
+[DEBUG] FileHistory: Added snapshot for 52ecfea4-019b-439a-8b8f-172b27552f59, tracking 3 files
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580309174
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115628 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580309174 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: unknown, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message d8755560-23bf-41ad-9ec2-3a66117d6d56
+[DEBUG] FileHistory: Added snapshot for d8755560-23bf-41ad-9ec2-3a66117d6d56, tracking 3 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580339991
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115612 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580339991 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 8c4548d7-8d5b-43a6-8d29-c74816ffd284
+[DEBUG] FileHistory: Added snapshot for 8c4548d7-8d5b-43a6-8d29-c74816ffd284, tracking 3 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580353923
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115604 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580353923 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760579688660-fxeirz.sh
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.12551.1760580402569
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116018 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.12551.1760580402569 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically

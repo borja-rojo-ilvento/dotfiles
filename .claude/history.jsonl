@@ -22,3 +22,30 @@
 {"display":"I want more clarity on `Option 2`. If I connect an old machine to the network, or small machine or something, then it's still behind the router. Explain how that is resolved to function as something to target over the internet. How does that machine have have internet exposer? Is the hostname a gateway name, and how does that get registered? Is it an IP?","pastedContents":{},"timestamp":1760566973413,"project":"/home/brojo"}
 {"display":"So, instead of connecting the local machine I'm trying to connect to, I use a dedicated machine to expose to the internet? In terms of security, this seems functionally the same. In what way do I use the old machine which is used as a gateway to be more secure? How do people normally use this setup?","pastedContents":{},"timestamp":1760567527631,"project":"/home/brojo"}
 {"display":"Give me some examples of a jump host machine which maintains latency and bandwidth performance.","pastedContents":{},"timestamp":1760567707998,"project":"/home/brojo"}
+{"display":"I want to change my setup to use Wayland instead of X11. Discord has some issues with Wayland, so we are going to use Vesktop in it's place. As a stopgap, there are many X11 specific settings and environment variables set to enable Discord screensharing and Electron compatibility with X11. I want to remove the X11 workwarounds and enable Wayland.","pastedContents":{},"timestamp":1760579831313,"project":"/home/brojo/system-conf"}
+{"display":"For that case, use `displayManager.sddm.wayland.enable = true`","pastedContents":{},"timestamp":1760579903736,"project":"/home/brojo/system-conf"}
+{"display":"Suggest those changes if they are necissary over options which involve removing them instead. Taking a step back, if portals need not be configured, then prefer that.","pastedContents":{},"timestamp":1760579960664,"project":"/home/brojo/system-conf"}
+{"display":"yes","pastedContents":{},"timestamp":1760580084260,"project":"/home/brojo/system-conf"}
+{"display":"!nix eval .","pastedContents":{},"timestamp":1760580242725,"project":"/home/brojo/system-conf"}
+{"display":"!nix eval .","pastedContents":{},"timestamp":1760580242738,"project":"/home/brojo/system-conf"}
+{"display":"!nix eval .","pastedContents":{},"timestamp":1760580242740,"project":"/home/brojo/system-conf"}
+{"display":"why","pastedContents":{},"timestamp":1760580251361,"project":"/home/brojo/system-conf"}
+{"display":"!nix eval .#nixosConfigurations.jaro.config.system.build.toplevel","pastedContents":{},"timestamp":1760580290135,"project":"/home/brojo/system-conf"}
+{"display":"!nix eval .#nixosConfigurations.jaro.config.system.build.toplevel","pastedContents":{},"timestamp":1760580290147,"project":"/home/brojo/system-conf"}
+{"display":"!nix eval .#nixosConfigurations.jaro.config.system.build.toplevel","pastedContents":{},"timestamp":1760580290149,"project":"/home/brojo/system-conf"}
+{"display":"/cost ","pastedContents":{},"timestamp":1760580309170,"project":"/home/brojo/system-conf"}
+{"display":"/cost ","pastedContents":{},"timestamp":1760580309180,"project":"/home/brojo/system-conf"}
+{"display":"/cost ","pastedContents":{},"timestamp":1760580309182,"project":"/home/brojo/system-conf"}
+{"display":"How can I bring a command I sent to the background back to the foreground?","pastedContents":{},"timestamp":1760580339986,"project":"/home/brojo/system-conf"}
+{"display":"I meant in claude code","pastedContents":{},"timestamp":1760580353918,"project":"/home/brojo/system-conf"}
+{"display":"check if I am using x11 or wayland","pastedContents":{},"timestamp":1760580595321,"project":"/home/brojo/system-conf"}
+{"display":"I want my nixos system to use wayland. I have removed some configurations for that already. Scour the repository for a reason for this.","pastedContents":{},"timestamp":1760580837629,"project":"/home/brojo/system-conf"}
+{"display":"- Remove `xrdp` entirely.\n- Remove the duplicate definitions leaving them in @lib/system/base.nix ","pastedContents":{},"timestamp":1760581481072,"project":"/home/brojo/system-conf"}
+{"display":"I would also like you to swap Vesktop for Discord with Vencord enabaled with the following override:\n\n```nix\n    (discord.override {\n      # withOpenASAR = true; # can do this here too\n      withVencord = true;\n    })\n```\n\nPlace this in a new file in the @lib/users/brojo/programs/ directory named `discord.nix` and include it in the @lib/users/brojo/home.nix imports.","pastedContents":{},"timestamp":1760581659869,"project":"/home/brojo/system-conf"}
+{"display":"Does this need to be wrapped in the `config` field? I don't have that in my other program files, though they may be wrong.","pastedContents":{},"timestamp":1760581696290,"project":"/home/brojo/system-conf"}
+{"display":"yes","pastedContents":{},"timestamp":1760581726442,"project":"/home/brojo/system-conf"}
+{"display":"Now check if I am running X11 or wayland","pastedContents":{},"timestamp":1760582139423,"project":"/home/brojo/system-conf"}
+{"display":"Now check if I am running X11 or wayland","pastedContents":{},"timestamp":1760582890374,"project":"/home/brojo/system-conf"}
+{"display":"I want to disable apps from reopenning on my desktop at login if they were open when it was shutdown. What might be causing this behavior?","pastedContents":{},"timestamp":1760582948044,"project":"/home/brojo"}
+{"display":"I am using kde. Can this be added in kwinrc as a setting?","pastedContents":{},"timestamp":1760583209566,"project":"/home/brojo"}
+{"display":"What are some KDE related config files that I would want to track in version control?","pastedContents":{},"timestamp":1760583296107,"project":"/home/brojo"}

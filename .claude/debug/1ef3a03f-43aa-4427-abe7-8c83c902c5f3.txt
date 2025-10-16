@@ -1,0 +1,49 @@
+[DEBUG] Watching for changes in setting files /home/brojo/.claude/settings.json, /home/brojo/system-conf/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 27 allow rule(s) to destination 'localSettings': ["Bash(nix flake check)","Bash(mkdir:*)","Bash(mv:*)","Bash(systemctl status:*)","Bash(cat:*)","Bash(journalctl:*)","Bash(lsmod)","Bash(powertop:*)","Bash(dmesg:*)","Bash(systemctl list-units:*)","Bash(lspci:*)","Bash(nix-shell:*)","WebFetch(domain:github.com)","WebFetch(domain:raw.githubusercontent.com)","Bash(curl:*)","Bash(find:*)","Bash(nix flake show:*)","Bash(nvidia-smi:*)","Bash(lsblk:*)","Bash(swapon:*)","Bash(nvidia-settings:*)","Bash(ls:*)","Bash(echo $DISPLAY)","Bash(xrandr:*)","Bash(nix flake check:*)","Bash(nix flake update:*)","Bash(nix eval:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/run/current-system/sw/bin/zsh)
+[DEBUG] Looking for shell config file: /home/brojo/.zshrc
+[DEBUG] Snapshots directory: /home/brojo/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/brojo/.claude/shell-snapshots/snapshot-zsh-1760582111414-atm21m.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/brojo/.claude/todos/1ef3a03f-43aa-4427-abe7-8c83c902c5f3-agent-1ef3a03f-43aa-4427-abe7-8c83c902c5f3.json.tmp.8722.1760582111418
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/brojo/.claude/todos/1ef3a03f-43aa-4427-abe7-8c83c902c5f3-agent-1ef3a03f-43aa-4427-abe7-8c83c902c5f3.json.tmp.8722.1760582111418 to /home/brojo/.claude/todos/1ef3a03f-43aa-4427-abe7-8c83c902c5f3-agent-1ef3a03f-43aa-4427-abe7-8c83c902c5f3.json
+[DEBUG] File /home/brojo/.claude/todos/1ef3a03f-43aa-4427-abe7-8c83c902c5f3-agent-1ef3a03f-43aa-4427-abe7-8c83c902c5f3.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/brojo/.claude/skills, project=/home/brojo/system-conf/.claude/skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/nix/store/kk4xmwbcl92vk83cfmgfh45c3a20s8ba-claude-code-2.0.14/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+[DEBUG] Shell snapshot created successfully (50825 bytes)
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.8722.1760582111618
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.8722.1760582111618 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.8722.1760582111626
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.8722.1760582111626 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/brojo/.claude.json.tmp.8722.1760582111921
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 115858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/brojo/.claude.json.tmp.8722.1760582111921 to /home/brojo/.claude.json
+[DEBUG] File /home/brojo/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] FileHistory: Copied backup d8ac5f9c00f0d4cf@v1 from session eef64c88-e640-4cfd-aff3-624c6b90ea5c to 1ef3a03f-43aa-4427-abe7-8c83c902c5f3
+[DEBUG] FileHistory: Copied backup d8ac5f9c00f0d4cf@v2 from session eef64c88-e640-4cfd-aff3-624c6b90ea5c to 1ef3a03f-43aa-4427-abe7-8c83c902c5f3
+[DEBUG] FileHistory: Copied backup 63efa35232472f46@v1 from session eef64c88-e640-4cfd-aff3-624c6b90ea5c to 1ef3a03f-43aa-4427-abe7-8c83c902c5f3
+[DEBUG] FileHistory: Copied backup 70ec4699f8fc90bb@v1 from session eef64c88-e640-4cfd-aff3-624c6b90ea5c to 1ef3a03f-43aa-4427-abe7-8c83c902c5f3
+[DEBUG] Executing hooks for SessionStart:resume
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
