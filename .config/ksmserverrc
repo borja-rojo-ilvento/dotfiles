@@ -2,19 +2,19 @@
 loginMode=emptySession
 
 [LegacySession: saved at previous logout]
-clientMachine1=localhost
-command1=firefox
-count=1
+clientMachine1[$d]
+command1[$d]
+count=0
 
 [Session: saved at previous logout]
-clientId1=106a61726f000176048094000000018130004
-clientId2=106a61726f000176048094000000018130005
-count=2
-program1=/nix/store/bw4j2ds7zna2n83cpndxwpxncn7d4gxm-discover-6.4.5/libexec/DiscoverNotifier
-program2=/nix/store/2lwghs6ib3gl3ms6r2dar7maybcb77y2-kwallet-6.18.0/bin/kwalletd6
-restartCommand1=/nix/store/bw4j2ds7zna2n83cpndxwpxncn7d4gxm-discover-6.4.5/libexec/DiscoverNotifier,-session,106a61726f000176048094000000018130004_1760494054_811744,-name,DiscoverNotifier
-restartCommand2=/nix/store/2lwghs6ib3gl3ms6r2dar7maybcb77y2-kwallet-6.18.0/bin/kwalletd6,-session,106a61726f000176048094000000018130005_1760494054_811745,-name,kwalletd6
-restartStyleHint1=0
-restartStyleHint2=0
-userId1=brojo
-userId2=brojo
+clientId1[$d]
+clientId2[$d]
+count=0
+program1[$d]
+program2[$d]
+restartCommand1[$d]
+restartCommand2[$d]
+restartStyleHint1[$d]
+restartStyleHint2[$d]
+userId1[$d]
+userId2[$d]
