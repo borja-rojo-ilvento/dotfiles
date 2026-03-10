@@ -49,3 +49,4 @@
 {"display":"I want to disable apps from reopenning on my desktop at login if they were open when it was shutdown. What might be causing this behavior?","pastedContents":{},"timestamp":1760582948044,"project":"/home/brojo"}
 {"display":"I am using kde. Can this be added in kwinrc as a setting?","pastedContents":{},"timestamp":1760583209566,"project":"/home/brojo"}
 {"display":"What are some KDE related config files that I would want to track in version control?","pastedContents":{},"timestamp":1760583296107,"project":"/home/brojo"}
+{"display":"command to store and pop latest commit on branch","pastedContents":{},"timestamp":1773147680379,"project":"/home/brojo/dotfiles","sessionId":"d587fabd-c5bd-4435-a14f-6d688dbd4051"}
