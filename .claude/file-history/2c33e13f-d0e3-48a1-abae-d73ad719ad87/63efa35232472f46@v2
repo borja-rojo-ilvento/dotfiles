@@ -1,0 +1,63 @@
+{ pkgs, ... }:
+{
+  imports = [
+    ./obs.nix
+    ./neovim.nix
+    ./discord.nix
+    ./dunst.nix
+    ./rofi
+    # ./hyprland is intentionally not imported — see ./hyprland/default.nix
+    # for the sequestered-but-preserved Hyprland user module.
+    ./power-management.nix
+    ./development.nix
+    ./input-method.nix
+    ./ghostty.nix
+    ./steam.nix
+  ];
+
+  config = {
+    home.packages = with pkgs; [
+      mangohud
+      protonup-qt
+      heroic
+      nemo
+      gvfs
+    ];
+
+    programs = {
+      git = {
+        enable = true;
+        settings = {
+          user = {
+            name = "Borja Rojo Ilvento";
+            email = "borja.rojo@gmail.com";
+          };
+        };
+      };
+
+      zsh = {
+        enable = true;
+        oh-my-zsh = {
+          enable = true;
+          theme = "alanpeabody";
+          plugins = [
+            "git"
+            "fzf"
+            "zoxide"
+            "direnv"
+          ];
+        };
+        # initContent = ''
+        #   fpath=(/home/brojo/.zsh/completions $fpath)
+        #   autoload -Uz compinit && compinit
+        # '';
+      };
+
+      direnv = {
+        enable = true;
+        nix-direnv.enable = true;
+        enableZshIntegration = true;
+      };
+    };
+  };
+}

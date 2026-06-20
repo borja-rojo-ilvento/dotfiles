@@ -1,0 +1,52 @@
+{ ... }:
+{
+  # Steam client rendering fix.
+  #
+  # Symptom: the CEF (embedded Chromium) store/library UI renders garbled,
+  # overlapping texture tiles. Root cause is CEF's GPU compositor failing under
+  # this host's session shape — Plasma 6 / Wayland with fractional scaling
+  # (Scale = 1.25) drives Steam as an XWayland client whose buffers KWin
+  # rescales; CEF's GPU process then dies (cef_log: GetVSyncParametersIfAvailable
+  # failed → CreateCommandBuffer failure → "GPU process has crashed"), leaving
+  # the UI compositing garbage.
+  #
+  # `-cef-disable-gpu-compositing` keeps GPU rasterization but routes final
+  # compositing through software, which is immune to that crash. We override the
+  # system `programs.steam` desktop entry rather than add a second launcher:
+  # $XDG_DATA_HOME (~/.local/share) is searched before the system data dirs, so
+  # this `steam.desktop` shadows /run/current-system/sw/share/applications.
+  #
+  # `Exec` calls the bare `steam` on PATH — that resolves to the system FHS
+  # wrapper (programs.steam in lib/hosts/desktop.nix), which already bundles
+  # intel-media-driver/libva/proton-ge. We deliberately do NOT re-wrap it.
+  xdg.desktopEntries.steam = {
+    name = "Steam";
+    comment = "Application for managing and playing games on Steam";
+    exec = "steam -cef-disable-gpu-compositing %U";
+    icon = "steam";
+    terminal = false;
+    type = "Application";
+    categories = [ "Network" "FileTransfer" "Game" ];
+    mimeType = [ "x-scheme-handler/steam" "x-scheme-handler/steamlink" ];
+    settings = {
+      StartupWMClass = "steam";
+      PrefersNonDefaultGPU = "false";
+      Keywords = "gaming;";
+    };
+  };
+
+  # ── Anex: prior approaches and why they were dropped ────────────────────────
+  #
+  # Tried: a `steam-fhs` desktop item running `steam-run ${steam}/bin/steam`,
+  # plus `steam-run` in home.packages. Two faults made it worse than the stock
+  # launcher, and it was never imported by ./default.nix so it was dead anyway:
+  #   1. Double FHS wrap. `${steam}/bin/steam` is itself a bubblewrap FHS
+  #      launcher, so this nested steam's bwrap inside steam-run's bwrap.
+  #   2. Library divergence. The generic `steam-run` FHS does not carry the
+  #      `programs.steam.extraPackages` (intel-media-driver, libva, proton-ge)
+  #      that the system FHS bakes in, so VAAPI/GL paths were thinner, not richer.
+  #
+  # If `-cef-disable-gpu-compositing` proves insufficient, escalate to the
+  # heavier `-cef-disable-gpu` (disables CEF GPU use entirely). The scaling
+  # trigger itself lives in Plasma (Scale = 1.25), not here.
+}

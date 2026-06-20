@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SpacetimeDB: Architecture &amp; External Services</title>
+<style>
+  :root {
+    --bg: #0e1117;
+    --surface: #161b22;
+    --surface2: #1c2230;
+    --border: #2a3040;
+    --accent: #4f8ef7;
+    --accent2: #7c5cbf;
+    --warn: #e2903d;
+    --ok: #3dba7e;
+    --text: #c9d1d9;
+    --text-dim: #7a8694;
+    --text-bright: #f0f4f8;
+    --code-bg: #111620;
+    --font-mono: 'JetBrains Mono', 'Fira Mono', 'Cascadia Code', monospace;
+    --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    display: flex;
+    min-height: 100vh;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ── Sidebar ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 240px;
+    height: 100vh;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 28px 0;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  nav .logo {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+  nav .logo span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 2px;
+  }
+
+  nav a {
+    display: block;
+    padding: 7px 20px;
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 13px;
+    border-left: 3px solid transparent;
+    transition: color .15s, border-color .15s, background .15s;
+  }
+  nav a:hover { color: var(--text-bright); background: var(--surface2); }
+  nav a.active { color: var(--accent); border-left-color: var(--accent); background: rgba(79,142,247,.07); }
+  nav .section-label {
+    padding: 16px 20px 4px;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--border);
+    font-weight: 700;
+  }
+
+  /* ── Main ── */
+  main {
+    margin-left: 240px;
+    padding: 56px 60px 100px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  section { padding-top: 24px; margin-bottom: 64px; }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 28px 0 10px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  p { margin-bottom: 14px; }
+
+  .lead {
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.8;
+    max-width: 720px;
+  }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: rgba(79,142,247,.06);
+    padding: 14px 18px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+  }
+  .callout.warn {
+    border-left-color: var(--warn);
+    background: rgba(226,144,61,.06);
+  }
+  .callout.ok {
+    border-left-color: var(--ok);
+    background: rgba(61,186,126,.06);
+  }
+  .callout strong { display: block; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    background: var(--code-bg);
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #a8d8a8;
+  }
+
+  /* ── Diagrams ── */
+  .diagram { margin: 28px 0; }
+  .diagram svg { display: block; width: 100%; height: auto; }
+  .diagram figcaption {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* ── Invariant cards ── */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin: 20px 0;
+  }
+  .card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 16px;
+  }
+  .card .icon { font-size: 22px; margin-bottom: 8px; }
+  .card .title { font-weight: 700; font-size: 14px; color: var(--text-bright); margin-bottom: 6px; }
+  .card .desc { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+
+  /* ── Comparison table ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 13.5px;
+  }
+  th {
+    text-align: left;
+    padding: 10px 14px;
+    background: var(--surface2);
+    color: var(--text-bright);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  .yes { color: var(--ok); font-weight: 600; }
+  .no  { color: #e06060;  font-weight: 600; }
+
+  /* ── Step flow ── */
+  .steps { counter-reset: step; margin: 20px 0; }
+  .step {
+    counter-increment: step;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+    align-items: flex-start;
+  }
+  .step::before {
+    content: counter(step);
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .step-body .label { font-weight: 600; color: var(--text-bright); font-size: 14px; }
+  .step-body .detail { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
+
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .tag-wasm  { background: rgba(124,92,191,.25); color: #a98fe8; }
+  .tag-native { background: rgba(61,186,126,.2);  color: #5dd4a0; }
+  .tag-ext   { background: rgba(226,144,61,.2);   color: #e2a86e; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <span>SpacetimeDB</span>
+    Architectural Design
+  </div>
+  <div class="section-label">Foundations</div>
+  <a href="#invariants">Design Invariants</a>
+  <a href="#reducer-gate">The Reducer as Logic Gate</a>
+
+  <div class="section-label">The Problem</div>
+  <a href="#external-problem">External Services</a>
+  <a href="#why-not-client">Why Not the Client?</a>
+
+  <div class="section-label">The Pattern</div>
+  <a href="#intent-result">Intent–Result Pattern</a>
+  <a href="#boundary">The Non-Determinism Boundary</a>
+
+  <div class="section-label">Applied</div>
+  <a href="#app-logic">Where Logic Lives</a>
+  <a href="#network-hops">Minimizing Network Hops</a>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="invariants">
+  <h1>SpacetimeDB: Design &amp; External Services</h1>
+  <p class="lead">An architectural perspective on maintaining the invariants SpacetimeDB is built on, while integrating non-deterministic external services such as LLM inference.</p>
+
+  <h2>Design Invariants</h2>
+  <p>SpacetimeDB's architecture rests on three properties that are not merely implementation details — they are the load-bearing walls of the system. Understanding them is necessary before asking what can or cannot be done within them.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <div class="title">Determinism</div>
+      <div class="desc">Given the same inputs, a reducer must always produce the same state change. This is what makes replication and consensus possible without coordination overhead.</div>
+    </div>
+    <div class="card">
+      <div class="icon">⚛️</div>
+      <div class="title">Atomicity</div>
+      <div class="desc">Each reducer call is a transaction. It either commits fully or not at all. There is no partial state, and no rollback after a side effect has already escaped.</div>
+    </div>
+    <div class="card">
+      <div class="icon">🔒</div>
+      <div class="title">Isolation</div>
+      <div class="desc">Reducers run inside a WASM sandbox with no ambient I/O. The only way data enters the system is through reducer arguments; the only way it leaves is through table writes.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>Why these three together</strong>
+    Determinism enables replication. Atomicity enables consistency. Isolation enforces both. Remove any one and the other two break down. An HTTP call inside a reducer would violate all three simultaneously.
+  </div>
+
+  <!-- Diagram: the WASM execution model -->
+  <figure class="diagram">
+    <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+      <!-- background -->
+      <rect width="720" height="200" fill="#161b22" rx="10"/>
+
+      <!-- WASM sandbox -->
+      <rect x="200" y="20" width="320" height="160" rx="8" fill="#1c2230" stroke="#2a3040" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <text x="360" y="44" fill="#7a8694" font-size="10" text-anchor="middle" font-weight="700" letter-spacing="1" text-transform="uppercase">WASM SANDBOX</text>
+
+      <!-- reducer box -->
+      <rect x="268" y="60" width="184" height="80" rx="6" fill="#0e1117" stroke="#4f8ef7" stroke-width="1.5"/>
+      <text x="360" y="94" fill="#f0f4f8" font-size="13" text-anchor="middle" font-weight="700">Reducer</text>
+      <text x="360" y="112" fill="#7a8694" font-size="11" text-anchor="middle">reads tables · writes tables</text>
+      <text x="360" y="128" fill="#7a8694" font-size="11" text-anchor="middle">pure logic only</text>
+
+      <!-- Client arrow -->
+      <line x1="160" y1="100" x2="265" y2="100" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arrow-b)"/>
+      <text x="80" y="88" fill="#c9d1d9" font-size="12" text-anchor="middle">Client</text>
+      <text x="80" y="104" fill="#7a8694" font-size="10" text-anchor="middle">reducer call</text>
+      <text x="80" y="118" fill="#7a8694" font-size="10" text-anchor="middle">+ arguments</text>
+
+      <!-- Tables arrow -->
+      <line x1="455" y1="100" x2="560" y2="100" stroke="#3dba7e" stroke-width="1.5" marker-end="url(#arrow-g)"/>
+      <text x="628" y="88" fill="#c9d1d9" font-size="12" text-anchor="middle">Tables</text>
+      <text x="628" y="104" fill="#7a8694" font-size="10" text-anchor="middle">committed</text>
+      <text x="628" y="118" fill="#7a8694" font-size="10" text-anchor="middle">state</text>
+
+      <!-- X mark for external -->
+      <line x1="360" y1="148" x2="360" y2="178" stroke="#e06060" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="360" y="194" fill="#e06060" font-size="10" text-anchor="middle">✕ no external I/O</text>
+
+      <defs>
+        <marker id="arrow-b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#4f8ef7"/>
+        </marker>
+        <marker id="arrow-g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#3dba7e"/>
+        </marker>
+      </defs>
+    </svg>
+    <figcaption>The reducer's execution boundary. Data enters only through arguments; exits only through table writes.</figcaption>
+  </figure>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="reducer-gate">
+  <h2>The Reducer as Logic Gate</h2>
+  <p>There is a subtle but important clarification about how data enters SpacetimeDB. Clients do not <em>send data to be stored</em> — they <em>invoke reducers</em>. The reducer is the logic gate that decides whether and how that call becomes a state change.</p>
+
+  <div class="callout warn">
+    <strong>Common misconception</strong>
+    "The client sends a payload and the database stores it" implies raw data flows in. In SpacetimeDB, the client calls a named reducer with arguments. What gets written — and whether anything gets written at all — is entirely determined by the reducer's logic.
+  </div>
+
+  <p>This means the pre-storage processing you described is not a separate middleware concern. The reducer <em>is</em> that middleware. Validation, transformation, authorization, derived computations — all of this belongs in the reducer, because that is the only place state transitions are authorized to happen.</p>
+
+  <!-- Diagram: comparison -->
+  <figure class="diagram">
+    <svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+      <rect width="720" height="220" fill="#161b22" rx="10"/>
+
+      <!-- Traditional label -->
+      <text x="180" y="30" fill="#7a8694" font-size="11" text-anchor="middle" font-weight="700" letter-spacing="1">TRADITIONAL</text>
+      <!-- SpacetimeDB label -->
+      <text x="540" y="30" fill="#4f8ef7" font-size="11" text-anchor="middle" font-weight="700" letter-spacing="1">SPACETIMEDB</text>
+
+      <!-- divider -->
+      <line x1="360" y1="20" x2="360" y2="200" stroke="#2a3040" stroke-width="1"/>
+
+      <!-- Traditional flow -->
+      <rect x="20" y="50" width="80" height="34" rx="5" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+      <text x="60" y="73" fill="#c9d1d9" font-size="12" text-anchor="middle">Client</text>
+      <line x1="100" y1="67" x2="130" y2="67" stroke="#7a8694" stroke-width="1.5" marker-end="url(#arr-dim)"/>
+      <rect x="130" y="50" width="80" height="34" rx="5" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+      <text x="170" y="68" fill="#c9d1d9" font-size="12" text-anchor="middle">Middle-</text>
+      <text x="170" y="81" fill="#c9d1d9" font-size="12" text-anchor="middle">ware</text>
+      <line x1="210" y1="67" x2="240" y2="67" stroke="#7a8694" stroke-width="1.5" marker-end="url(#arr-dim)"/>
+      <rect x="240" y="50" width="80" height="34" rx="5" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+      <text x="280" y="73" fill="#c9d1d9" font-size="12" text-anchor="middle">DB</text>
+      <text x="180" y="115" fill="#7a8694" font-size="11" text-anchor="middle">3 hops · logic fragmented</text>
+      <text x="180" y="130" fill="#7a8694" font-size="11" text-anchor="middle">across boundaries</text>
+
+      <!-- SpacetimeDB flow -->
+      <rect x="400" y="50" width="80" height="34" rx="5" fill="#1c2230" stroke="#4f8ef7" stroke-width="1"/>
+      <text x="440" y="73" fill="#c9d1d9" font-size="12" text-anchor="middle">Client</text>
+      <line x1="480" y1="67" x2="510" y2="67" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+      <rect x="510" y="42" width="120" height="50" rx="5" fill="#0e1117" stroke="#4f8ef7" stroke-width="1.5"/>
+      <text x="570" y="62" fill="#4f8ef7" font-size="11" text-anchor="middle" font-weight="700">Reducer</text>
+      <text x="570" y="76" fill="#7a8694" font-size="10" text-anchor="middle">logic + storage</text>
+      <text x="570" y="88" fill="#7a8694" font-size="10" text-anchor="middle">in one boundary</text>
+      <text x="530" y="130" fill="#3dba7e" font-size="11" text-anchor="middle">1 hop · logic lives where</text>
+      <text x="530" y="145" fill="#3dba7e" font-size="11" text-anchor="middle">state is authoritative</text>
+
+      <!-- labels for client calls -->
+      <text x="115" y="58" fill="#7a8694" font-size="9" text-anchor="middle">HTTP</text>
+      <text x="226" y="58" fill="#7a8694" font-size="9" text-anchor="middle">SQL</text>
+      <text x="494" y="58" fill="#4f8ef7" font-size="9" text-anchor="middle">call</text>
+
+      <defs>
+        <marker id="arr-dim" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#7a8694"/>
+        </marker>
+        <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#4f8ef7"/>
+        </marker>
+      </defs>
+    </svg>
+    <figcaption>In SpacetimeDB, middleware and storage are not separate layers — the reducer unifies them.</figcaption>
+  </figure>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="external-problem">
+  <h2>The External Service Problem</h2>
+  <p>If all application logic is meant to live inside the database, where does an LLM inference call go? It cannot go in a reducer — not as a technical workaround limitation, but because it would violate all three design invariants simultaneously:</p>
+
+  <table>
+    <tr>
+      <th>Invariant</th>
+      <th>Why an inline HTTP call breaks it</th>
+    </tr>
+    <tr>
+      <td><strong>Determinism</strong></td>
+      <td>Two replicas running the same reducer with the same inputs could receive different LLM responses. Consensus breaks.</td>
+    </tr>
+    <tr>
+      <td><strong>Atomicity</strong></td>
+      <td>If the reducer writes state and <em>then</em> calls an LLM which times out, the transaction cannot cleanly roll back an effect that already left the system.</td>
+    </tr>
+    <tr>
+      <td><strong>Isolation</strong></td>
+      <td>The WASM sandbox exists specifically to prevent ambient I/O. Bypassing it would undermine the entire execution model.</td>
+    </tr>
+  </table>
+
+  <p>The question then becomes: if the invariants are non-negotiable, is there a way to integrate external services without betraying the design?</p>
+
+  <div class="callout warn">
+    <strong>The real question</strong>
+    This is not about "getting around a limitation." It is about recognizing that LLM inference is not a transaction — it is <em>data acquisition</em>. The distinction determines where in the system it belongs.
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="why-not-client">
+  <h2>Why Not the Client?</h2>
+  <p>The instinct to reject the client as the home for LLM calls is architecturally sound, but the reasoning deserves precision. The objection is not that clients <em>cannot</em> make LLM calls — they can. The objection is about where <em>consequential decisions</em> should originate.</p>
+
+  <p>In a game context: if the AI's decision (which unit to spawn, where to attack) is computed by the client and then submitted as a reducer call, then the client is trusted to compute it correctly and honestly. In a multiplayer or authoritative-server model, that trust is often unacceptable. A cheating client could submit any action, bypassing the AI decision entirely.</p>
+
+  <div class="callout">
+    <strong>The distinction</strong>
+    The issue is not <em>who</em> makes the HTTP call. It is <em>who is trusted to reason about the result</em>. If the AI's decisions must be authoritative — not forgeable by a client — they cannot originate on the client.
+  </div>
+
+  <p>This is why the answer is not "put the LLM call on the client." It's also not "put the LLM call in the reducer." The answer requires a third participant: a <strong>server-side worker</strong> that is trusted but runs outside the WASM sandbox.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="intent-result">
+  <h2>The Intent–Result Pattern</h2>
+  <p>The correct architectural pattern is a two-phase commit of intent and result, sometimes called the <strong>Oracle Pattern</strong> (analogous to how blockchain systems handle off-chain data). The key insight is that the database only ever receives <em>deterministic inputs</em> — the non-determinism is quarantined to a specific, acknowledged boundary outside the database.</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-body">
+        <div class="label">Client invokes a reducer <span class="tag tag-wasm">wasm</span></div>
+        <div class="detail">e.g. <code>request_ai_action(context)</code>. The reducer records an <em>intent row</em> with status <code>PENDING</code>. This is a fully deterministic, atomic write. No external call is made. The transaction commits immediately.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-body">
+        <div class="label">Worker subscribes and detects the intent <span class="tag tag-native">native</span></div>
+        <div class="detail">A server-side process (Rust, native binary) holds a SpacetimeDB client subscription. It observes the new <code>PENDING</code> row via a live subscription callback. The worker is co-located with the SpacetimeDB host — not the game client.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-body">
+        <div class="label">Worker makes the external call <span class="tag tag-ext">external</span></div>
+        <div class="detail">The worker calls the LLM API (via Rig, tokio, etc.). This is explicitly the non-deterministic boundary. If it fails, it retries or records a failure. No database state has been mutated yet for this event.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-body">
+        <div class="label">Worker submits the result via a reducer <span class="tag tag-wasm">wasm</span></div>
+        <div class="detail">e.g. <code>record_ai_result(intent_id, action)</code>. The result is now a deterministic input. The reducer applies whatever logic is needed (validation, game-state consequences), and commits. The system is back to fully deterministic territory.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Diagram: full flow -->
+  <figure class="diagram">
+    <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+      <rect width="720" height="300" fill="#161b22" rx="10"/>
+
+      <!-- Swimlane backgrounds -->
+      <rect x="10"  y="40" width="160" height="240" rx="6" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+      <rect x="280" y="40" width="160" height="240" rx="6" fill="#0e1117" stroke="#4f8ef7" stroke-width="1.5"/>
+      <rect x="550" y="40" width="160" height="240" rx="6" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+
+      <!-- Swimlane labels -->
+      <text x="90"  y="28" fill="#7a8694"  font-size="10" text-anchor="middle" font-weight="700" letter-spacing=".08em">GAME CLIENT</text>
+      <text x="360" y="28" fill="#4f8ef7"  font-size="10" text-anchor="middle" font-weight="700" letter-spacing=".08em">SPACETIMEDB</text>
+      <text x="630" y="28" fill="#e2903d"  font-size="10" text-anchor="middle" font-weight="700" letter-spacing=".08em">AI WORKER (native)</text>
+
+      <!-- Boxes in SpacetimeDB column -->
+      <rect x="296" y="70"  width="128" height="32" rx="4" fill="#1c2230" stroke="#4f8ef7" stroke-width="1"/>
+      <text x="360" y="91" fill="#c9d1d9" font-size="11" text-anchor="middle">request_ai_action()</text>
+
+      <rect x="296" y="130" width="128" height="32" rx="4" fill="#1c2230" stroke="#3dba7e" stroke-width="1"/>
+      <text x="360" y="151" fill="#c9d1d9" font-size="11" text-anchor="middle">PENDING intent row</text>
+
+      <rect x="296" y="220" width="128" height="32" rx="4" fill="#1c2230" stroke="#4f8ef7" stroke-width="1"/>
+      <text x="360" y="241" fill="#c9d1d9" font-size="11" text-anchor="middle">record_ai_result()</text>
+
+      <!-- Box in worker column -->
+      <rect x="566" y="150" width="128" height="50" rx="4" fill="#1c2230" stroke="#e2903d" stroke-width="1"/>
+      <text x="630" y="170" fill="#c9d1d9" font-size="11" text-anchor="middle">LLM API call</text>
+      <text x="630" y="186" fill="#7a8694" font-size="10" text-anchor="middle">(non-deterministic)</text>
+
+      <!-- Box in client column -->
+      <rect x="26" y="70" width="128" height="32" rx="4" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+      <text x="90" y="91" fill="#c9d1d9" font-size="11" text-anchor="middle">call reducer</text>
+
+      <!-- Arrows -->
+      <!-- client → spacetimedb -->
+      <line x1="155" y1="86" x2="292" y2="86" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arr2-b)"/>
+      <!-- reducer → pending row -->
+      <line x1="360" y1="102" x2="360" y2="127" stroke="#3dba7e" stroke-width="1.5" marker-end="url(#arr2-g)"/>
+      <!-- pending row → worker (subscription) -->
+      <line x1="424" y1="146" x2="562" y2="163" stroke="#e2903d" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arr2-o)"/>
+      <text x="500" y="142" fill="#e2903d" font-size="9" text-anchor="middle">subscription</text>
+      <!-- worker → LLM -->
+      <!-- (internal to worker box, implied) -->
+      <!-- worker → spacetimedb result -->
+      <line x1="562" y1="190" x2="428" y2="228" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arr2-b)"/>
+      <text x="508" y="222" fill="#7a8694" font-size="9" text-anchor="middle">call reducer</text>
+      <!-- result reducer commits -->
+      <rect x="296" y="265" width="128" height="24" rx="4" fill="rgba(61,186,126,.15)" stroke="#3dba7e" stroke-width="1"/>
+      <text x="360" y="282" fill="#3dba7e" font-size="11" text-anchor="middle">state committed ✓</text>
+      <line x1="360" y1="252" x2="360" y2="262" stroke="#3dba7e" stroke-width="1.5" marker-end="url(#arr2-g)"/>
+
+      <!-- Non-det boundary label -->
+      <rect x="536" y="136" width="178" height="82" rx="6" fill="none" stroke="#e2903d" stroke-width="1" stroke-dasharray="4 3"/>
+      <text x="625" y="231" fill="#e2903d" font-size="9" text-anchor="middle">non-determinism boundary</text>
+
+      <defs>
+        <marker id="arr2-b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#4f8ef7"/>
+        </marker>
+        <marker id="arr2-g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#3dba7e"/>
+        </marker>
+        <marker id="arr2-o" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#e2903d"/>
+        </marker>
+      </defs>
+    </svg>
+    <figcaption>The Intent–Result pattern. Non-determinism is quarantined to the worker. SpacetimeDB only ever receives deterministic inputs.</figcaption>
+  </figure>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="boundary">
+  <h2>The Non-Determinism Boundary</h2>
+  <p>The most important concept in this pattern is that the non-determinism boundary is <em>explicit and acknowledged</em>, not hidden or worked around. The worker is not a hack — it is a recognized architectural role: a <strong>trusted data provider</strong>.</p>
+
+  <p>This is analogous to how financial systems handle market data. The exchange is authoritative over trades (like SpacetimeDB over game state), but it accepts price feeds from external data providers (like the worker providing LLM responses). The database never calls out; it receives. All external data arrives as a named, typed, traceable reducer call.</p>
+
+  <div class="callout ok">
+    <strong>The invariants are preserved</strong>
+    The LLM response, once submitted to the <code>record_ai_result</code> reducer, is treated as a deterministic input. Every replica sees the same argument. The reducer applies the same logic. State converges. The database has no knowledge that the input was non-deterministically produced — and it does not need to.
+  </div>
+
+  <h3>What the worker is and is not</h3>
+  <p>The worker is <strong>not</strong> application logic. It does not decide what the game does — that is still the reducer's job. The worker's only responsibility is to obtain a piece of data (the LLM response) and deliver it to the database. It is a data pipeline node, not a logic tier.</p>
+
+  <p>This means: if someone asked "where does the game logic live?", the honest answer is still "in SpacetimeDB, in reducers." The worker is infrastructure — analogous to a message queue consumer or a webhook listener. Its logic is limited to: fetch, retry on failure, submit result.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="app-logic">
+  <h2>Where Logic Lives</h2>
+  <p>Clarifying the distinction between application logic and data acquisition resolves the apparent tension in the original question.</p>
+
+  <table>
+    <tr>
+      <th>Concern</th>
+      <th>Category</th>
+      <th>Where it belongs</th>
+    </tr>
+    <tr>
+      <td>Validate a unit spawn request</td>
+      <td>Application logic</td>
+      <td class="yes">Reducer (SpacetimeDB)</td>
+    </tr>
+    <tr>
+      <td>Compute damage from an attack</td>
+      <td>Application logic</td>
+      <td class="yes">Reducer (SpacetimeDB)</td>
+    </tr>
+    <tr>
+      <td>Respond to an AI decision</td>
+      <td>Application logic</td>
+      <td class="yes">Reducer (SpacetimeDB)</td>
+    </tr>
+    <tr>
+      <td>Decide what AI action to take</td>
+      <td>Data acquisition (non-det)</td>
+      <td style="color: var(--warn); font-weight: 600;">Worker → submits to reducer</td>
+    </tr>
+    <tr>
+      <td>Call LLM inference API</td>
+      <td>External I/O</td>
+      <td style="color: var(--warn); font-weight: 600;">Worker only</td>
+    </tr>
+    <tr>
+      <td>Render game state</td>
+      <td>Presentation</td>
+      <td class="no">Client only</td>
+    </tr>
+  </table>
+
+  <p>Notice that "responding to" an AI decision is application logic (reducer), while "deciding" is data acquisition (worker). The boundary falls between having the data and acting on it — not between game logic and AI logic.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="network-hops">
+  <h2>Minimizing Network Hops</h2>
+  <p>The worker introduces what looks like additional latency: client → SpacetimeDB → worker → LLM → SpacetimeDB. However, the hop profile depends on deployment topology, and the pattern accommodates optimization.</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+      <rect width="720" height="200" fill="#161b22" rx="10"/>
+
+      <!-- Topology diagram -->
+      <!-- Internet boundary -->
+      <rect x="10" y="20" width="200" height="160" rx="6" fill="#1c2230" stroke="#2a3040" stroke-width="1" stroke-dasharray="5 3"/>
+      <text x="110" y="38" fill="#7a8694" font-size="9" text-anchor="middle" font-weight="700" letter-spacing=".08em">PLAYER'S MACHINE</text>
+
+      <!-- Co-located server boundary -->
+      <rect x="240" y="20" width="460" height="160" rx="6" fill="#111620" stroke="#4f8ef7" stroke-width="1" stroke-dasharray="5 3"/>
+      <text x="470" y="38" fill="#4f8ef7" font-size="9" text-anchor="middle" font-weight="700" letter-spacing=".08em">SERVER INFRASTRUCTURE (co-located)</text>
+
+      <!-- Nodes -->
+      <rect x="30"  y="80" width="80" height="34" rx="4" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+      <text x="70"  y="102" fill="#c9d1d9" font-size="11" text-anchor="middle">Game Client</text>
+
+      <rect x="260" y="80" width="100" height="34" rx="4" fill="#0e1117" stroke="#4f8ef7" stroke-width="1.5"/>
+      <text x="310" y="98"  fill="#c9d1d9" font-size="11" text-anchor="middle">SpacetimeDB</text>
+      <text x="310" y="111" fill="#7a8694" font-size="9"  text-anchor="middle">host</text>
+
+      <rect x="420" y="80" width="80" height="34" rx="4" fill="#1c2230" stroke="#e2903d" stroke-width="1"/>
+      <text x="460" y="102" fill="#c9d1d9" font-size="11" text-anchor="middle">AI Worker</text>
+
+      <rect x="560" y="80" width="80" height="34" rx="4" fill="#1c2230" stroke="#2a3040" stroke-width="1"/>
+      <text x="600" y="98"  fill="#c9d1d9" font-size="11" text-anchor="middle">LLM API</text>
+      <text x="600" y="111" fill="#7a8694" font-size="9"  text-anchor="middle">(external)</text>
+
+      <!-- Hop 1: wide internet -->
+      <line x1="110" y1="97" x2="256" y2="97" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arr3-b)"/>
+      <text x="183" y="88" fill="#4f8ef7" font-size="9" text-anchor="middle">WAN</text>
+      <text x="183" y="100" fill="#7a8694" font-size="8" text-anchor="middle">~20–80ms</text>
+
+      <!-- Hop 2: local network -->
+      <line x1="362" y1="97" x2="417" y2="97" stroke="#e2903d" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#arr3-o)"/>
+      <text x="390" y="88" fill="#e2903d" font-size="9" text-anchor="middle">LAN</text>
+      <text x="390" y="100" fill="#7a8694" font-size="8" text-anchor="middle">&lt;1ms</text>
+
+      <!-- Hop 3: LLM -->
+      <line x1="500" y1="97" x2="557" y2="97" stroke="#7a8694" stroke-width="1.5" marker-end="url(#arr3-dim)"/>
+      <text x="528" y="88" fill="#7a8694" font-size="9" text-anchor="middle">WAN</text>
+      <text x="528" y="100" fill="#7a8694" font-size="8" text-anchor="middle">100–800ms</text>
+
+      <!-- Return hop -->
+      <path d="M460,114 Q460,155 310,155 Q260,155 310,136" stroke="#3dba7e" stroke-width="1.5" fill="none" stroke-dasharray="4 2" marker-end="url(#arr3-g)"/>
+      <text x="385" y="170" fill="#3dba7e" font-size="9" text-anchor="middle">result via reducer call (LAN, &lt;1ms)</text>
+
+      <defs>
+        <marker id="arr3-b"   markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#4f8ef7"/></marker>
+        <marker id="arr3-o"   markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#e2903d"/></marker>
+        <marker id="arr3-dim" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#7a8694"/></marker>
+        <marker id="arr3-g"   markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3dba7e"/></marker>
+      </defs>
+    </svg>
+    <figcaption>Co-locating the worker with SpacetimeDB eliminates the hop that would otherwise exist. The client only ever does one WAN round-trip.</figcaption>
+  </figure>
+
+  <h3>The key optimization</h3>
+  <p>The expensive leg is always the LLM API call — hundreds of milliseconds regardless of architecture. The client's experience is: <em>call reducer, wait for a subscription update when the AI result is committed</em>. That wait is dominated by the LLM latency, not by the worker's internal hops. Co-locating the worker with the SpacetimeDB host ensures the worker→database round-trip is sub-millisecond and does not compound the LLM latency.</p>
+
+  <div class="callout">
+    <strong>What the client actually experiences</strong>
+    The client sends one reducer call. It then waits on a subscription, which fires when <code>record_ai_result</code> commits. From the client's perspective, this is indistinguishable from the database having computed the result itself — except the client made a single, clean call and received a reactive update. No polling. No second request.
+  </div>
+
+  <h3>Summary</h3>
+  <p>The Intent–Result pattern does not compromise SpacetimeDB's design invariants — it works with them. The database remains the authoritative, deterministic system it is designed to be. The worker is an acknowledged infrastructure role: a data provider, not a logic tier. Application logic stays in reducers. Non-determinism stays isolated and explicit. And from the client's perspective, the system behaves as if the database computed the AI response itself.</p>
+</section>
+
+</main>
+
+<script>
+  // Highlight active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('nav a');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`nav a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>

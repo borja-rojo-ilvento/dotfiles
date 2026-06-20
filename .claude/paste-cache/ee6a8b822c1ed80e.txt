@@ -1,0 +1,47 @@
+brojo@jaro ~/zerg-rush$ spacetime dev --template basic-rs           1 ↵  ✖ ✭master
+Warning: --template option is ignored because a SpacetimeDB project already exists.
+✓ Created /home/brojo/zerg-rush/./spacetime.json
+
+Found existing SpacetimeDB project.
+Now we need to select a database to publish to.
+
+✔ Database selection · Create new database with random name
+
+Selected database: foamy-sink-1672
+Tip: Use `spacetime dev foamy-sink-1672` to skip this question next time
+✓ Created /home/brojo/zerg-rush/./spacetime.local.json
+✓ Detected client command and saved to /home/brojo/zerg-rush/./spacetime.json
+
+Starting development mode...
+Database: foamy-sink-1672
+Watching for changes in: /home/brojo/zerg-rush
+Client command: cargo run
+Press Ctrl+C to stop
+
+Building...
+info: component rust-std for target wasm32-unknown-unknown is up to date
+   Compiling stable_deref_trait v1.2.1
+   Compiling cfg-if v1.0.4
+   Compiling pin-project-lite v0.2.17
+   Compiling futures-core v0.3.32
+   Compiling memchr v2.8.0
+   Compiling futures-sink v0.3.32
+   Compiling proc-macro2 v1.0.106
+   Compiling rustversion v1.0.22
+error[E0463]: can't find crate for `core`
+  |
+  = note: the `wasm32-unknown-unknown` target may not be installed
+  = help: consider downloading the target with `rustup target add wasm32-unknown-unknown`
+
+For more information about this error, try `rustc --explain E0463`.
+error: could not compile `futures-core` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `stable_deref_trait` (lib) due to 1 previous error
+error: could not compile `cfg-if` (lib) due to 1 previous error
+error: could not compile `pin-project-lite` (lib) due to 1 previous error
+error: could not compile `futures-sink` (lib) due to 1 previous error
+error: could not compile `memchr` (lib) due to 1 previous error
+Error: Failed to build project
+
+Caused by:
+    command ["cargo", "build", "--config=net.git-fetch-with-cli=true", "--target=wasm32-unknown-unknown", "--release", "--message-format=json-render-diagnostics"] exited with code 101

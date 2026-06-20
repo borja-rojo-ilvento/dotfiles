@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "plugins": {
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/brojo/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown",
+        "version": "unknown",
+        "installedAt": "2026-05-17T03:30:21.325Z",
+        "lastUpdated": "2026-05-17T03:30:21.325Z"
+      }
+    ],
+    "lua-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/brojo/.claude/plugins/cache/claude-plugins-official/lua-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-05-23T04:48:29.055Z",
+        "lastUpdated": "2026-05-23T04:48:29.055Z"
+      }
+    ]
+  }
+}

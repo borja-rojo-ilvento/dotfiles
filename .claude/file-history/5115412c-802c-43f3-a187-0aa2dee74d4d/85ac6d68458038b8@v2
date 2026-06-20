@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpacetimeDB Architecture Guide</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #181c27;
+      --surface2: #1e2333;
+      --border: #2a2f45;
+      --accent: #5b8ef7;
+      --accent2: #7c5bf7;
+      --accent3: #f75b8e;
+      --text: #d4d8f0;
+      --text-muted: #6b7298;
+      --text-dim: #9099c0;
+      --green: #3dd68c;
+      --yellow: #f7c35b;
+      --orange: #f78d5b;
+      --sidebar-width: 260px;
+      --font: 'Segoe UI', system-ui, sans-serif;
+      --mono: 'Cascadia Code', 'Fira Code', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.7;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ── Sidebar ── */
+    nav {
+      width: var(--sidebar-width);
+      min-height: 100vh;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 32px 0;
+      position: fixed;
+      top: 0; left: 0;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    nav .logo {
+      padding: 0 24px 24px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    nav .logo span {
+      display: block;
+      font-size: 14px;
+      color: var(--accent);
+      letter-spacing: .04em;
+      margin-top: 2px;
+    }
+
+    nav ul { list-style: none; }
+
+    nav ul li a {
+      display: block;
+      padding: 7px 24px;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color .15s, background .15s;
+    }
+
+    nav ul li a:hover {
+      color: var(--text);
+      background: rgba(91,142,247,.08);
+    }
+
+    nav ul li.section > a {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 16px;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    nav ul li.sub > a { padding-left: 36px; }
+
+    /* ── Main content ── */
+    main {
+      margin-left: var(--sidebar-width);
+      flex: 1;
+      max-width: 860px;
+      padding: 56px 56px 120px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin: 56px 0 8px;
+      padding-top: 8px;
+      scroll-margin-top: 32px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 28px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-size: 12px;
+      scroll-margin-top: 32px;
+    }
+
+    p { margin-bottom: 16px; color: var(--text); }
+
+    .callout {
+      border-left: 3px solid var(--accent);
+      background: rgba(91,142,247,.06);
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    .callout.warn {
+      border-left-color: var(--orange);
+      background: rgba(247,141,91,.06);
+    }
+
+    .callout.ok {
+      border-left-color: var(--green);
+      background: rgba(61,214,140,.06);
+    }
+
+    .callout strong { color: #fff; }
+
+    code {
+      font-family: var(--mono);
+      font-size: 13px;
+      background: var(--surface2);
+      padding: 1px 6px;
+      border-radius: 3px;
+      color: var(--accent);
+    }
+
+    .diagram-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 28px;
+      margin: 24px 0;
+      overflow-x: auto;
+    }
+
+    .diagram-wrap figcaption {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+
+    .card h4 {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .card p { font-size: 13px; margin-bottom: 0; color: var(--text-dim); }
+
+    .card.bad { border-color: rgba(247,91,142,.3); }
+    .card.bad h4 { color: var(--accent3); }
+    .card.good { border-color: rgba(61,214,140,.3); }
+    .card.good h4 { color: var(--green); }
+
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 6px;
+    }
+
+    .tag.db { background: rgba(91,142,247,.15); color: var(--accent); }
+    .tag.ext { background: rgba(247,195,91,.12); color: var(--yellow); }
+    .tag.client { background: rgba(61,214,140,.12); color: var(--green); }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SpacetimeDB<span>Architecture Guide</span></div>
+  <ul>
+    <li class="section"><a href="#invariants">Core Model</a></li>
+    <li class="sub"><a href="#invariants">Design Invariants</a></li>
+    <li class="sub"><a href="#reducer-model">The Reducer Model</a></li>
+    <li class="sub"><a href="#client-correction">Correcting the Client Model</a></li>
+
+    <li class="section"><a href="#effects-problem">External Effects</a></li>
+    <li class="sub"><a href="#effects-problem">The Effects Problem</a></li>
+    <li class="sub"><a href="#reframe">Logic vs. Effect</a></li>
+
+    <li class="section"><a href="#pattern">The Pattern</a></li>
+    <li class="sub"><a href="#pattern">Intent &amp; Oracle</a></li>
+    <li class="sub"><a href="#agent-identity">The Agent as Participant</a></li>
+    <li class="sub"><a href="#flow">Full Data Flow</a></li>
+
+    <li class="section"><a href="#philosophy">Design Philosophy</a></li>
+    <li class="sub"><a href="#philosophy">Pure Core / Impure Shell</a></li>
+    <li class="sub"><a href="#analogy">Broader Analogies</a></li>
+    <li class="sub"><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <h1>SpacetimeDB Architecture</h1>
+  <p class="subtitle">External effects, design invariants, and where AI inference fits in a SpacetimeDB system.</p>
+
+  <!-- ═══════════════════════════════ SECTION 1 ═══════════════════════════════ -->
+
+  <h2 id="invariants">Design Invariants</h2>
+  <p>SpacetimeDB is built on three properties that are non-negotiable by design. Every architectural decision flows from maintaining them.</p>
+
+  <div class="diagram-wrap">
+    <svg width="100%" viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+      <!-- Determinism -->
+      <rect x="20" y="20" width="190" height="90" rx="8" fill="#1e2333" stroke="#2a2f45"/>
+      <text x="115" y="50" text-anchor="middle" fill="#5b8ef7" font-size="11" font-weight="700" letter-spacing="1">DETERMINISM</text>
+      <text x="115" y="70" text-anchor="middle" fill="#9099c0" font-size="11">Given identical inputs,</text>
+      <text x="115" y="86" text-anchor="middle" fill="#9099c0" font-size="11">every replica produces</text>
+      <text x="115" y="102" text-anchor="middle" fill="#9099c0" font-size="11">identical state.</text>
+      <!-- Atomicity -->
+      <rect x="245" y="20" width="190" height="90" rx="8" fill="#1e2333" stroke="#2a2f45"/>
+      <text x="340" y="50" text-anchor="middle" fill="#5b8ef7" font-size="11" font-weight="700" letter-spacing="1">ATOMICITY</text>
+      <text x="340" y="70" text-anchor="middle" fill="#9099c0" font-size="11">State transitions are</text>
+      <text x="340" y="86" text-anchor="middle" fill="#9099c0" font-size="11">all-or-nothing. No</text>
+      <text x="340" y="102" text-anchor="middle" fill="#9099c0" font-size="11">partial writes exist.</text>
+      <!-- Subscriptions -->
+      <rect x="470" y="20" width="190" height="90" rx="8" fill="#1e2333" stroke="#2a2f45"/>
+      <text x="565" y="50" text-anchor="middle" fill="#5b8ef7" font-size="11" font-weight="700" letter-spacing="1">LIVE SUBSCRIPTIONS</text>
+      <text x="565" y="70" text-anchor="middle" fill="#9099c0" font-size="11">Clients observe state</text>
+      <text x="565" y="86" text-anchor="middle" fill="#9099c0" font-size="11">changes as they happen;</text>
+      <text x="565" y="102" text-anchor="middle" fill="#9099c0" font-size="11">they do not poll.</text>
+    </svg>
+    <figcaption>The three properties SpacetimeDB is designed to preserve.</figcaption>
+  </div>
+
+  <p>
+    Determinism requires that reducers — the only mechanism for mutating state — must produce the same output for the same input unconditionally. This rules out any I/O inside a reducer: no network calls, no randomness from outside, no filesystem reads.
+  </p>
+
+  <!-- ─── Reducer model ─── -->
+  <h2 id="reducer-model">The Reducer Model</h2>
+  <p>
+    A reducer is a function that runs inside the database, reads current table state, and writes new table state. It is the unit of transactional logic. All state changes flow through reducers; there is no direct write path for clients.
+  </p>
+
+  <div class="diagram-wrap">
+    <svg width="100%" viewBox="0 0 660 160" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+      <!-- Client -->
+      <rect x="20" y="50" width="110" height="60" rx="8" fill="#1e2333" stroke="#3dd68c" stroke-width="1.5"/>
+      <text x="75" y="76" text-anchor="middle" fill="#3dd68c" font-size="11" font-weight="700">CLIENT</text>
+      <text x="75" y="92" text-anchor="middle" fill="#9099c0" font-size="10">calls reducer</text>
+      <text x="75" y="106" text-anchor="middle" fill="#9099c0" font-size="10">with arguments</text>
+      <!-- Arrow 1 -->
+      <line x1="135" y1="80" x2="190" y2="80" stroke="#2a2f45" stroke-width="1.5"/>
+      <polygon points="190,75 200,80 190,85" fill="#2a2f45"/>
+      <text x="165" y="72" text-anchor="middle" fill="#6b7298" font-size="10">invoke</text>
+      <!-- Reducer box -->
+      <rect x="205" y="30" width="250" height="100" rx="8" fill="#1e2333" stroke="#5b8ef7" stroke-width="1.5"/>
+      <text x="330" y="56" text-anchor="middle" fill="#5b8ef7" font-size="11" font-weight="700" letter-spacing="1">REDUCER (in DB)</text>
+      <text x="330" y="76" text-anchor="middle" fill="#d4d8f0" font-size="11">reads current state</text>
+      <text x="330" y="92" text-anchor="middle" fill="#d4d8f0" font-size="11">applies logic</text>
+      <text x="330" y="108" text-anchor="middle" fill="#d4d8f0" font-size="11">writes new state — atomically</text>
+      <!-- Arrow 2 -->
+      <line x1="460" y1="80" x2="510" y2="80" stroke="#2a2f45" stroke-width="1.5"/>
+      <polygon points="510,75 520,80 510,85" fill="#2a2f45"/>
+      <text x="487" y="72" text-anchor="middle" fill="#6b7298" font-size="10">emits</text>
+      <!-- Tables -->
+      <rect x="525" y="50" width="110" height="60" rx="8" fill="#1e2333" stroke="#7c5bf7" stroke-width="1.5"/>
+      <text x="580" y="76" text-anchor="middle" fill="#7c5bf7" font-size="11" font-weight="700">TABLES</text>
+      <text x="580" y="92" text-anchor="middle" fill="#9099c0" font-size="10">updated state</text>
+      <text x="580" y="106" text-anchor="middle" fill="#9099c0" font-size="10">pushed to subs</text>
+    </svg>
+    <figcaption>All state mutation is mediated by a reducer. Clients invoke; reducers act; subscribers observe.</figcaption>
+  </div>
+
+  <!-- ─── Client correction ─── -->
+  <h2 id="client-correction">Correcting the Client Model</h2>
+
+  <div class="callout warn">
+    <strong>The model to revise:</strong> "the client sends a payload and a system applies logic to it before it is recorded."
+  </div>
+
+  <p>
+    That framing implies a pipeline — payload travels to the database, something intercepts it, transforms it, then stores it. SpacetimeDB does not work this way. The reducer <em>is</em> the transformation step, and it runs entirely inside the database as an atomic unit. There is no pre-processing stage external to the reducer.
+  </p>
+  <p>
+    The corrected model: the client sends a <strong>command</strong> — a reducer name plus arguments. The reducer is the logic that validates, transforms, and commits state. The client has no role in the logic; it only provides inputs and observes outputs via subscriptions.
+  </p>
+
+  <div class="two-col">
+    <div class="card bad">
+      <h4>Incorrect mental model</h4>
+      <p>Client sends data → middleware transforms it → database stores it.</p>
+    </div>
+    <div class="card good">
+      <h4>Correct mental model</h4>
+      <p>Client invokes a reducer → reducer reads + transforms + writes, atomically.</p>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- ═══════════════════════════════ SECTION 2 ═══════════════════════════════ -->
+
+  <h2 id="effects-problem">The External Effects Problem</h2>
+
+  <p>
+    Your intuition is sound: if the system's logic is meant to live in the database, having a client-side process orchestrate an LLM call and then feed the result in feels architecturally incoherent — the intelligence is stranded outside the system boundary.
+  </p>
+  <p>
+    But the tension dissolves once the right distinction is drawn. The issue is not about where logic lives. It is about the difference between <em>logic</em> and <em>effects</em>.
+  </p>
+
+  <h2 id="reframe">Logic vs. Effect</h2>
+
+  <div class="diagram-wrap">
+    <svg width="100%" viewBox="0 0 660 170" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+      <!-- Logic side -->
+      <rect x="20" y="20" width="290" height="130" rx="8" fill="rgba(91,142,247,0.05)" stroke="rgba(91,142,247,0.3)" stroke-dasharray="5,3"/>
+      <text x="165" y="44" text-anchor="middle" fill="#5b8ef7" font-size="11" font-weight="700" letter-spacing="1">LOGIC  (lives in reducers)</text>
+      <text x="165" y="70" text-anchor="middle" fill="#9099c0" font-size="11">Given state S and command C,</text>
+      <text x="165" y="88" text-anchor="middle" fill="#9099c0" font-size="11">what is the next state S'?</text>
+      <text x="165" y="112" text-anchor="middle" fill="#d4d8f0" font-size="11">Pure, deterministic, transactional.</text>
+      <text x="165" y="130" text-anchor="middle" fill="#d4d8f0" font-size="11">No I/O. No side effects.</text>
+
+      <!-- Effects side -->
+      <rect x="350" y="20" width="290" height="130" rx="8" fill="rgba(247,195,91,0.05)" stroke="rgba(247,195,91,0.3)" stroke-dasharray="5,3"/>
+      <text x="495" y="44" text-anchor="middle" fill="#f7c35b" font-size="11" font-weight="700" letter-spacing="1">EFFECTS  (live outside DB)</text>
+      <text x="495" y="70" text-anchor="middle" fill="#9099c0" font-size="11">Producing inputs for the system:</text>
+      <text x="495" y="88" text-anchor="middle" fill="#9099c0" font-size="11">player commands, sensor data,</text>
+      <text x="495" y="106" text-anchor="middle" fill="#9099c0" font-size="11">AI decisions, external lookups.</text>
+      <text x="495" y="130" text-anchor="middle" fill="#d4d8f0" font-size="11">Inherently non-deterministic.</text>
+    </svg>
+    <figcaption>The fundamental separation. SpacetimeDB owns the left side by design. The right side belongs to the boundary.</figcaption>
+  </div>
+
+  <p>
+    An LLM inference call is an <em>effect</em> — it is the act of producing a non-deterministic input. What the system <em>does with that input</em> — validating it, integrating it into game state, triggering downstream state changes — is <em>logic</em>, and belongs in a reducer.
+  </p>
+  <p>
+    SpacetimeDB's invariant is not "all computation lives in the database." It is "all <strong>state transitions</strong> are deterministic and atomic." These are compatible with external effects, provided the effects are positioned correctly at the system boundary.
+  </p>
+
+  <div class="callout ok">
+    <strong>The reframe:</strong> The LLM is not app logic being displaced to the wrong layer. It is an input source — equivalent in kind to a player pressing a key — that happens to require an external service to produce. The database correctly handles what to do with the result.
+  </div>
+
+  <hr/>
+
+  <!-- ═══════════════════════════════ SECTION 3 ═══════════════════════════════ -->
+
+  <h2 id="pattern">The Intent &amp; Oracle Pattern</h2>
+
+  <p>
+    The canonical solution is to model the LLM call as an asynchronous, two-phase interaction. The database expresses a <strong>need</strong>; an external service fulfills it; the result re-enters through the standard reducer invocation path.
+  </p>
+
+  <div class="diagram-wrap">
+    <svg width="100%" viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+      <!-- Column headers -->
+      <text x="90" y="22" text-anchor="middle" fill="#3dd68c" font-size="10" font-weight="700" letter-spacing="1">SPACETIMEDB</text>
+      <text x="380" y="22" text-anchor="middle" fill="#f7c35b" font-size="10" font-weight="700" letter-spacing="1">AI AGENT PROCESS</text>
+      <text x="620" y="22" text-anchor="middle" fill="#7c5bf7" font-size="10" font-weight="700" letter-spacing="1">LLM API</text>
+
+      <!-- Vertical lanes -->
+      <line x1="200" y1="30" x2="200" y2="270" stroke="#2a2f45" stroke-width="1" stroke-dasharray="4,3"/>
+      <line x1="520" y1="30" x2="520" y2="270" stroke="#2a2f45" stroke-width="1" stroke-dasharray="4,3"/>
+
+      <!-- Step 1: reducer writes intent -->
+      <rect x="20" y="44" width="160" height="40" rx="6" fill="#1e2333" stroke="#3dd68c" stroke-width="1.2"/>
+      <text x="100" y="60" text-anchor="middle" fill="#3dd68c" font-size="10" font-weight="700">reducer runs</text>
+      <text x="100" y="76" text-anchor="middle" fill="#9099c0" font-size="10">writes Intent record to table</text>
+
+      <!-- Step 2: subscription fires -->
+      <line x1="180" y1="84" x2="240" y2="110" stroke="#5b8ef7" stroke-width="1.5" marker-end="url(#arr)"/>
+      <text x="220" y="103" fill="#6b7298" font-size="10">subscription fires</text>
+
+      <!-- Step 3: agent reads intent -->
+      <rect x="250" y="114" width="170" height="40" rx="6" fill="#1e2333" stroke="#f7c35b" stroke-width="1.2"/>
+      <text x="335" y="130" text-anchor="middle" fill="#f7c35b" font-size="10" font-weight="700">agent sees pending Intent</text>
+      <text x="335" y="146" text-anchor="middle" fill="#9099c0" font-size="10">reads game state from subscription</text>
+
+      <!-- Step 4: LLM call -->
+      <line x1="420" y1="134" x2="540" y2="134" stroke="#7c5bf7" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <text x="480" y="127" text-anchor="middle" fill="#6b7298" font-size="10">HTTP request</text>
+      <rect x="545" y="114" width="150" height="40" rx="6" fill="#1e2333" stroke="#7c5bf7" stroke-width="1.2"/>
+      <text x="620" y="130" text-anchor="middle" fill="#7c5bf7" font-size="10" font-weight="700">LLM inference</text>
+      <text x="620" y="146" text-anchor="middle" fill="#9099c0" font-size="10">non-deterministic I/O</text>
+
+      <!-- Step 5: response -->
+      <line x1="545" y1="174" x2="425" y2="174" stroke="#7c5bf7" stroke-width="1.5" marker-end="url(#arr3)"/>
+      <text x="480" y="167" text-anchor="middle" fill="#6b7298" font-size="10">decision returned</text>
+
+      <!-- Step 6: agent calls reducer -->
+      <rect x="250" y="188" width="170" height="40" rx="6" fill="#1e2333" stroke="#f7c35b" stroke-width="1.2"/>
+      <text x="335" y="204" text-anchor="middle" fill="#f7c35b" font-size="10" font-weight="700">agent calls reducer</text>
+      <text x="335" y="220" text-anchor="middle" fill="#9099c0" font-size="10">fulfill_intent(id, decision)</text>
+
+      <!-- Step 7: reducer processes result -->
+      <line x1="250" y1="208" x2="180" y2="230" stroke="#5b8ef7" stroke-width="1.5" marker-end="url(#arr4)"/>
+
+      <rect x="20" y="230" width="160" height="36" rx="6" fill="#1e2333" stroke="#3dd68c" stroke-width="1.2"/>
+      <text x="100" y="248" text-anchor="middle" fill="#3dd68c" font-size="10" font-weight="700">reducer processes result</text>
+      <text x="100" y="260" text-anchor="middle" fill="#9099c0" font-size="10">updates game state atomically</text>
+
+      <!-- Arrowhead markers -->
+      <defs>
+        <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#5b8ef7"/>
+        </marker>
+        <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#7c5bf7"/>
+        </marker>
+        <marker id="arr3" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto">
+          <path d="M8,0 L8,6 L0,3 z" fill="#7c5bf7"/>
+        </marker>
+        <marker id="arr4" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto">
+          <path d="M8,0 L8,6 L0,3 z" fill="#5b8ef7"/>
+        </marker>
+      </defs>
+    </svg>
+    <figcaption>The Intent &amp; Oracle pattern. Non-determinism is isolated to the agent process; the database sees only deterministic inputs and outputs.</figcaption>
+  </div>
+
+  <p>The pattern has four key properties:</p>
+  <ul style="margin: 0 0 16px 20px; color: var(--text);">
+    <li style="margin-bottom: 8px;"><strong>The database expresses intent, not a request.</strong> The Intent record says "an AI decision is needed for unit X in situation Y" — it is a fact about current state, not a side effect.</li>
+    <li style="margin-bottom: 8px;"><strong>The non-deterministic call is isolated.</strong> The LLM response lives entirely in the agent process until it is explicitly fed back as a reducer argument.</li>
+    <li style="margin-bottom: 8px;"><strong>Results re-enter as standard inputs.</strong> <code>fulfill_intent</code> is a reducer like any other. The database does not know or care that the argument came from an LLM.</li>
+    <li style="margin-bottom: 8px;"><strong>Determinism is fully preserved.</strong> Every replica sees the same <code>fulfill_intent</code> call with the same arguments and produces the same state transition.</li>
+  </ul>
+
+  <!-- ─── Agent identity ─── -->
+  <h2 id="agent-identity">The Agent as a Participant, Not a Client</h2>
+
+  <p>
+    This distinction matters for the question of where logic lives. A player client is also "outside the database" — it observes state and invokes reducers. If having the client make an LLM call felt wrong, the issue was not the network hop; it was that a player client carries the wrong identity and trust level to make authoritative game decisions.
+  </p>
+  <p>
+    The AI agent process is not a player. It is a <strong>trusted system participant</strong> with its own identity, its own SpacetimeDB credentials, and potentially elevated reducer permissions. Its role is structurally identical to a game server process: it subscribes to state, applies external reasoning, and drives state changes via authenticated reducer calls.
+  </p>
+
+  <div class="callout">
+    <strong>Where logic lives:</strong> The rules governing what the AI <em>can</em> do, what moves are legal, and how the result integrates into game state all live in reducers. What the AI <em>decides</em> to do — the policy — is computed externally and provided as input. This is not a compromise of the design; it is the correct boundary.
+  </div>
+
+  <!-- ─── Full flow ─── -->
+  <h2 id="flow">Full Data Flow</h2>
+
+  <div class="diagram-wrap">
+    <svg width="100%" viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+      <defs>
+        <marker id="a1" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+          <path d="M0,0 L0,7 L7,3.5 z" fill="#6b7298"/>
+        </marker>
+      </defs>
+
+      <!-- Boxes -->
+      <rect x="10"  y="70" width="100" height="60" rx="7" fill="#1e2333" stroke="#3dd68c"  stroke-width="1.5"/>
+      <text x="60"  y="96"  text-anchor="middle" fill="#3dd68c"  font-size="10" font-weight="700">PLAYERS</text>
+      <text x="60"  y="112" text-anchor="middle" fill="#9099c0"  font-size="10">game clients</text>
+
+      <rect x="148" y="40" width="130" height="120" rx="7" fill="#1e2333" stroke="#5b8ef7"  stroke-width="1.5"/>
+      <text x="213" y="66"  text-anchor="middle" fill="#5b8ef7"  font-size="10" font-weight="700">SPACETIMEDB</text>
+      <text x="213" y="84"  text-anchor="middle" fill="#9099c0"  font-size="10">reducers + tables</text>
+      <text x="213" y="100" text-anchor="middle" fill="#d4d8f0"  font-size="10">pure logic</text>
+      <text x="213" y="116" text-anchor="middle" fill="#d4d8f0"  font-size="10">atomic transitions</text>
+      <text x="213" y="136" text-anchor="middle" fill="#6b7298"  font-size="10">Intent table ↓</text>
+      <text x="213" y="150" text-anchor="middle" fill="#6b7298"  font-size="10">subscriptions ↑</text>
+
+      <rect x="316" y="55" width="130" height="90" rx="7" fill="#1e2333" stroke="#f7c35b"  stroke-width="1.5"/>
+      <text x="381" y="80"  text-anchor="middle" fill="#f7c35b"  font-size="10" font-weight="700">AI AGENT</text>
+      <text x="381" y="97"  text-anchor="middle" fill="#9099c0"  font-size="10">rig + tokio</text>
+      <text x="381" y="113" text-anchor="middle" fill="#d4d8f0"  font-size="10">policy / orchestration</text>
+      <text x="381" y="129" text-anchor="middle" fill="#6b7298"  font-size="10">trusted participant</text>
+
+      <rect x="484" y="70" width="110" height="60" rx="7" fill="#1e2333" stroke="#7c5bf7"  stroke-width="1.5"/>
+      <text x="539" y="96"  text-anchor="middle" fill="#7c5bf7"  font-size="10" font-weight="700">LLM API</text>
+      <text x="539" y="112" text-anchor="middle" fill="#9099c0"  font-size="10">inference only</text>
+
+      <rect x="630" y="70" width="62" height="60" rx="7" fill="#1e2333" stroke="#f75b8e"  stroke-width="1.5"/>
+      <text x="661" y="96"  text-anchor="middle" fill="#f75b8e"  font-size="10" font-weight="700">OTHER</text>
+      <text x="661" y="112" text-anchor="middle" fill="#9099c0"  font-size="10">APIs etc.</text>
+
+      <!-- Arrows -->
+      <line x1="113" y1="100" x2="145" y2="100" stroke="#6b7298" stroke-width="1.2" marker-end="url(#a1)"/>
+      <line x1="145" y1="90"  x2="113" y2="90"  stroke="#6b7298" stroke-width="1.2" marker-end="url(#a1)"/>
+
+      <line x1="280" y1="105" x2="313" y2="105" stroke="#6b7298" stroke-width="1.2" marker-end="url(#a1)"/>
+      <line x1="313" y1="95"  x2="280" y2="95"  stroke="#6b7298" stroke-width="1.2" marker-end="url(#a1)"/>
+
+      <line x1="448" y1="95"  x2="481" y2="95"  stroke="#6b7298" stroke-width="1.2" marker-end="url(#a1)"/>
+      <line x1="481" y1="105" x2="448" y2="105" stroke="#6b7298" stroke-width="1.2" marker-end="url(#a1)"/>
+
+      <line x1="597" y1="100" x2="627" y2="100" stroke="#6b7298" stroke-width="1.2" marker-end="url(#a1)"/>
+    </svg>
+    <figcaption>System topology. The database is the authority. The AI agent is a trusted participant. Impure I/O is bounded to the right.</figcaption>
+  </div>
+
+  <hr/>
+
+  <!-- ═══════════════════════════════ SECTION 4 ═══════════════════════════════ -->
+
+  <h2 id="philosophy">Pure Core / Impure Shell</h2>
+
+  <p>
+    This pattern has a name in functional and systems design: <strong>Functional Core, Imperative Shell</strong>. The core contains all logic — pure functions, no side effects. The shell manages effects — I/O, network, time — and feeds results into the core.
+  </p>
+
+  <div class="diagram-wrap">
+    <svg width="100%" viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+      <!-- Outer shell -->
+      <ellipse cx="250" cy="110" rx="230" ry="100" fill="none" stroke="rgba(247,195,91,0.35)" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="250" y="26" text-anchor="middle" fill="#f7c35b" font-size="11" font-weight="700" letter-spacing="1">IMPURE SHELL</text>
+      <text x="250" y="42" text-anchor="middle" fill="#6b7298" font-size="10">effects, I/O, non-determinism, network</text>
+
+      <!-- Inner core -->
+      <ellipse cx="250" cy="115" rx="130" ry="68" fill="rgba(91,142,247,0.06)" stroke="rgba(91,142,247,0.5)" stroke-width="2"/>
+      <text x="250" y="92"  text-anchor="middle" fill="#5b8ef7" font-size="11" font-weight="700" letter-spacing="1">PURE CORE</text>
+      <text x="250" y="110" text-anchor="middle" fill="#d4d8f0" font-size="10">SpacetimeDB</text>
+      <text x="250" y="126" text-anchor="middle" fill="#d4d8f0" font-size="10">reducers, tables</text>
+      <text x="250" y="142" text-anchor="middle" fill="#9099c0" font-size="10">deterministic logic</text>
+
+      <!-- Shell labels -->
+      <text x="72"  y="100" text-anchor="middle" fill="#f7c35b" font-size="10">AI Agent</text>
+      <text x="72"  y="115" text-anchor="middle" fill="#6b7298" font-size="10">Rig + tokio</text>
+      <text x="428" y="100" text-anchor="middle" fill="#f7c35b" font-size="10">Player Clients</text>
+      <text x="428" y="115" text-anchor="middle" fill="#6b7298" font-size="10">game clients</text>
+      <text x="250" y="195" text-anchor="middle" fill="#f7c35b" font-size="10">LLM APIs / external services</text>
+    </svg>
+    <figcaption>SpacetimeDB as pure core; all effects are handled at the outer boundary and fed in as inputs.</figcaption>
+  </div>
+
+  <!-- ─── Analogies ─── -->
+  <h2 id="analogy">Broader Analogies</h2>
+
+  <div class="two-col">
+    <div class="card">
+      <h4>The Elm Architecture</h4>
+      <p>The <code>update</code> function is a pure state machine. Side effects are commands returned to the runtime, which executes them and feeds results back as messages. SpacetimeDB reducers are the <code>update</code> function. The AI agent is the runtime.</p>
+    </div>
+    <div class="card">
+      <h4>Hexagonal Architecture</h4>
+      <p>The domain (SpacetimeDB) defines ports. External services (LLM, clients) are adapters. The domain never reaches out; adapters push data in through the defined interface — reducer invocations.</p>
+    </div>
+    <div class="card">
+      <h4>Event Sourcing / CQRS</h4>
+      <p>The Intent table is a command queue. The AI agent is a command handler that requires external data. The result is a new command (<code>fulfill_intent</code>). The event log remains fully deterministic.</p>
+    </div>
+    <div class="card">
+      <h4>Actor Model</h4>
+      <p>The AI agent is an actor. It has a mailbox (the Intent table via subscription), does local computation (LLM call), and sends a message (reducer invocation). The database is the authoritative actor that manages all shared state.</p>
+    </div>
+  </div>
+
+  <!-- ─── Summary ─── -->
+  <h2 id="summary">Summary</h2>
+
+  <p>SpacetimeDB's invariants are not in conflict with external AI inference. The conflict only appears when logic and effects are conflated. The resolution:</p>
+
+  <ul style="margin: 0 0 24px 20px; color: var(--text);">
+    <li style="margin-bottom: 10px;"><span class="tag db">DB</span> Reducers own all state transitions. They are the logic layer — pure, atomic, deterministic.</li>
+    <li style="margin-bottom: 10px;"><span class="tag ext">Agent</span> The AI agent process owns all effects. It subscribes to state, calls the LLM, and submits results back through reducer invocations.</li>
+    <li style="margin-bottom: 10px;"><span class="tag client">Client</span> Player clients are also participants. They submit commands (reducer calls) and observe state. They should not orchestrate AI logic.</li>
+  </ul>
+
+  <div class="callout ok">
+    <strong>The invariant preserved:</strong> every state transition the database makes is still deterministic and atomic. The LLM's non-determinism is fully contained at the system boundary. The database has no knowledge of, or dependency on, external services.
+  </div>
+
+</main>
+</body>
+</html>

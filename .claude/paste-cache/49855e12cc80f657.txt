@@ -1,0 +1,48 @@
+Decoration provider "start" (ns=nvim.treesitter.highlighter):
+Lua: ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:215: ...wrap
+ped-0.12.2/share/nvim/runtime/lua/vim/treesitter.lua:196: attempt to call met
+hod 'range' (a nil value)
+stack traceback:
+        [C]: in function 'f'
+        ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:215: in f
+unction 'tcall'
+        ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:596: in f
+unction 'parse'
+        ....2/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:580: in f
+unction <....2/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:557>
+Decoration provider "start" (ns=nvim.treesitter.highlighter):
+Lua: ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:215: ...wrap
+ped-0.12.2/share/nvim/runtime/lua/vim/treesitter.lua:196: attempt to call met
+hod 'range' (a nil value)
+stack traceback:
+        [C]: in function 'f'
+        ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:215: in f
+unction 'tcall'
+        ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:596: in f
+unction 'parse'
+        ....2/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:580: in f
+unction <....2/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:557>
+vim.schedule callback: ...2/share/nvim/runtime/lua/vim/treesitter/languagetre
+e.lua:215: ...wrapped-0.12.2/share/nvim/runtime/lua/vim/treesitter.lua:196: a
+ttempt to call method 'range' (a nil value)
+stack traceback:
+        [C]: in function 'f'
+        ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:215: in f
+unction 'tcall'
+        ...2/share/nvim/runtime/lua/vim/treesitter/languagetree.lua:596: in f
+unction 'parse'
+        ...cal/share/nvim/lazy/snacks.nvim/lua/snacks/util/init.lua:464: in f
+unction 'parse'
+        ...cal/share/nvim/lazy/snacks.nvim/lua/snacks/image/doc.lua:241: in f
+unction 'find'
+        ...cal/share/nvim/lazy/snacks.nvim/lua/snacks/image/doc.lua:219: in f
+unction 'find_visible'
+        .../share/nvim/lazy/snacks.nvim/lua/snacks/image/inline.lua:95: in fu
+nction 'update'
+        .../share/nvim/lazy/snacks.nvim/lua/snacks/image/inline.lua:16: in fu
+nction ''
+        vim/_core/editor.lua: in function <vim/_core/editor.lua:0>
+vim.schedule callback: ...2/share/nvim/runtime/lua/vim/treesitter/languagetre
+e.lua:215: ...wrapped-0.12.2/share/nvim/runtime/lua/vim/treesitter.lua:196: a
+ttempt to call method 'range' (a nil value)
+-- More --
